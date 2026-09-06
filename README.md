@@ -1,40 +1,38 @@
-# LiangHao Project Hub (專案展示入口)
+# LiangHao Project Hub
 
-本 Repository 為 LiangHao 個人開發工具、AI 科技偵查、Windows 原生桌面程式與純前端工具之**公開作品展示網站**。
+LiangHao 的公開作品展示入口，使用純 HTML、CSS 與 Vanilla JavaScript 建置，並由 GitHub Pages 部署。
 
-🌐 **線上展示站**：[https://lianghao02.github.io/Project-Hub/](https://lianghao02.github.io/Project-Hub/)
+網站只展示公開作品；開發環境管理、Agent 控制與私人工作資料屬於 Dev-Control-Center，未納入本 Repository。
 
----
+## 維護專案資料
 
-## 專案定位
+展示卡片的唯一主要資料來源是 [data/projects.json](data/projects.json)。新增、刪除或調整作品時，請只修改此檔案；[assets/js/main.js](assets/js/main.js) 會依分類載入並建立卡片。
 
-- **作品展示門戶**：提供響應式卡片展示、功能介紹、技術標籤與 GitHub Repository 連結。
-- **純靜態架構**：採用標準 HTML5、CSS 與 Vanilla JavaScript，無多餘前端框架負擔，由 GitHub Pages 自動託管部署。
-- **免安裝即開即用**：收錄免安裝純 Web 工具、Windows 原生桌面應用程式與 AI 鑑識工作站之核心入口。
-
----
-
-## 檔案結構
+變更後執行：
 
 ```text
-13_Project-Hub/
-├── .github/workflows/
-│   └── pages.yml          # GitHub Pages 自動建置與部署
-├── downloads/             # 工具包與使用說明
-│   ├── Photo_Report.rar
-│   └── README.md
-├── images/                # 專案橫幅封面圖片
-├── scripts/               # 維護輔助腳本
-│   └── update_project_hub.py
-├── .nojekyll              # 略過 Jekyll 靜態建置處理
-├── favicon.ico            # 網站圖示
-├── index.html             # 作品集主頁
-├── photo_report.html      # 照片清冊工具詳細說明與下載頁
-└── README.md              # 本說明文件
+python scripts/validate_projects.py
 ```
 
----
+驗證器會檢查 JSON 格式、必填欄位、重複名稱與 URL、分類、圖片路徑及 featured 值。
 
-## 開發與更新
+## 特殊頁面與下載
 
-本專案為純靜態網站，可直接以瀏覽器開啟 `index.html` 進行本機預覽。推送至 `main` 分支後將自動觸發 GitHub Pages 部署。
+[photo_report.html](photo_report.html) 是舊版 Excel/VBA 照片清冊工具的獨立介紹與下載頁，並非 Photo-Report-Generator Web 應用程式的副本，因此保留維護。`downloads/Photo_Report.rar` 仍由此頁使用。
+
+## 結構
+
+```text
+.
+├─ assets/js/main.js          # 載入 metadata 並渲染卡片
+├─ data/projects.json         # 展示資料單一來源
+├─ docs/BASELINE.md           # 重構前網站基準
+├─ downloads/                 # photo_report.html 使用的必要下載檔
+├─ images/                    # 專案卡片圖片
+├─ scripts/validate_projects.py
+├─ scripts/update_project_hub.py
+├─ index.html
+└─ photo_report.html
+```
+
+推送至 `main` 時，`.github/workflows/pages.yml` 會部署 Repository 根目錄至 GitHub Pages。
