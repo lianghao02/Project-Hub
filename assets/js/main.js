@@ -173,23 +173,23 @@ const FALLBACK_PROJECTS = [
     "featured": true
   },
   {
-    "name": "Desktop Frames + 桌面面板",
+    "name": "Desktop Frames + 桌面分區面板",
     "category": "native",
-    "description": "Windows 原生 C# .NET 8 桌面圖示與捷徑分組面板，支援繁中在地化、分頁管理、資料夾鏡射、智慧桌面自動分類與隨身免安裝。",
+    "description": "Windows 原生 C# .NET 8 桌面圖示分區面板（Fence），支援智慧間距吸附、多版面一鍵切換、滑鼠框選無損收納與繁體中文可攜免安裝。",
     "tags": [
       "C# (.NET 8)",
       "WPF 原生",
-      "繁體中文",
+      "智慧吸附與版面切換",
       "免安裝 Portable"
     ],
     "url": "https://github.com/lianghao02/DesktopFramesPlus",
     "image": "images/banner_DesktopFramesPlus.png",
-    "alt": "Desktop Frames + 桌面面板",
+    "alt": "Desktop Frames + 桌面分區面板",
     "icon": "fa-table-cells-large",
     "iconColor": "#3b82f6",
     "badge": ".NET 8 原生",
     "badgeClass": "badge-native",
-    "version": "v2.7.8",
+    "version": "v2.8.0",
     "action": "查看專案",
     "featured": true
   },
