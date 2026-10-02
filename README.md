@@ -6,9 +6,24 @@ LiangHao 的公開作品展示入口，使用純 HTML、CSS 與 Vanilla JavaScri
 
 ## 維護專案資料
 
-展示卡片的唯一主要資料來源是 [data/projects.json](data/projects.json)。新增、刪除或調整作品時，請只修改此檔案；[assets/js/main.js](assets/js/main.js) 會依分類載入並建立卡片。
+展示卡片的主要資料來源是 [data/projects.json](data/projects.json)。版本號欄位（`version`）為**可選項目**；若未填寫或留空，前端卡片會自動隱藏版本標籤，維持版面純淨整潔。
 
-變更後執行：
+### 自動同步各專案最新版本與備援資料
+
+為避免各專案升版後需手動修改，專案提供自動同步腳本：
+
+```bash
+# 自動掃描鄰近 Repository 之最新 Git Tag 並同步至 JSON 與 main.js 備援
+python scripts/sync_projects.py --mode sync
+
+# 徹底免維護模式：一鍵清除所有微小版本號（不用版本號，一勞永逸）
+python scripts/sync_projects.py --mode strip
+
+# 長青交付標籤模式：改為「線上即用 / 開源釋出」等通用狀態標籤
+python scripts/sync_projects.py --mode status
+```
+
+手動修改後亦可單獨執行合規驗證：
 
 ```text
 python scripts/validate_projects.py
@@ -29,7 +44,8 @@ python scripts/validate_projects.py
 ├─ docs/BASELINE.md           # 重構前網站基準
 ├─ downloads/                 # photo_report.html 使用的必要下載檔
 ├─ images/                    # 專案卡片圖片
-├─ scripts/validate_projects.py
+├─ scripts/sync_projects.py      # 一鍵自動同步版本號與備援
+├─ scripts/validate_projects.py  # 專案資料合規驗證
 ├─ scripts/update_project_hub.py
 ├─ index.html
 └─ photo_report.html

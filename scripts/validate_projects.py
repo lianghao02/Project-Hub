@@ -6,7 +6,7 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_FILE = ROOT / "data" / "projects.json"
-REQUIRED = {"name", "category", "description", "tags", "url", "image", "alt", "icon", "iconColor", "badge", "badgeClass", "version", "action", "featured"}
+REQUIRED = {"name", "category", "description", "tags", "url", "image", "alt", "icon", "iconColor", "badge", "badgeClass", "action", "featured"}
 VALID_CATEGORIES = {"web", "native", "ai"}
 
 def main() -> int:
@@ -31,6 +31,7 @@ def main() -> int:
         else: urls.add(url)
         if project.get("category") not in VALID_CATEGORIES: errors.append(f"{label} has an invalid category")
         if not isinstance(project.get("tags"), list) or not all(isinstance(tag, str) and tag.strip() for tag in project.get("tags", [])): errors.append(f"{label} has invalid tags")
+        if "version" in project and not isinstance(project["version"], str): errors.append(f"{label} has an invalid version")
         if not isinstance(project.get("featured"), bool): errors.append(f"{label} has an invalid featured value")
         image = project.get("image")
         if not isinstance(image, str) or not (ROOT / image).is_file(): errors.append(f"{label} image is missing: {image}")

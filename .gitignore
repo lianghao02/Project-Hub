@@ -1,0 +1,21 @@
+# Python 快取與暫存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+env/
+venv/
+
+# 編輯器與作業系統暫存
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# 測試與診斷快取
+.playwright-mcp/
+.pytest_cache/

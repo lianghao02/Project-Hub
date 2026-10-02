@@ -15,7 +15,7 @@
     "iconColor": "#0ea5e9",
     "badge": "免安裝",
     "badgeClass": "badge-web",
-    "version": "v3.2.0",
+    "version": "v3.2.1",
     "action": "開啟地圖",
     "featured": true
   },
@@ -35,7 +35,7 @@
     "iconColor": "#14b8a6",
     "badge": "免安裝",
     "badgeClass": "badge-web",
-    "version": "v2.2.1",
+    "version": "v2.3.1",
     "action": "開啟工具",
     "featured": true
   },
@@ -55,7 +55,7 @@
     "iconColor": "#d97706",
     "badge": "免安裝",
     "badgeClass": "badge-web",
-    "version": "v1.7.0",
+    "version": "v1.7.1",
     "action": "開啟轉檔",
     "featured": false
   },
@@ -95,7 +95,7 @@
     "iconColor": "#6366f1",
     "badge": ".NET 8 原生",
     "badgeClass": "badge-native",
-    "version": "v11.2.0",
+    "version": "v11.4.0",
     "action": "查看專案",
     "featured": true
   },
@@ -115,7 +115,7 @@
     "iconColor": "#eab308",
     "badge": ".NET 8 原生",
     "badgeClass": "badge-native",
-    "version": "v6.2.1",
+    "version": "v6.2.3",
     "action": "查看專案",
     "featured": false
   },
@@ -135,7 +135,7 @@
     "iconColor": "#ef4444",
     "badge": ".NET 8 原生",
     "badgeClass": "badge-native",
-    "version": "v4.0.0",
+    "version": "v4.3.0",
     "action": "查看專案",
     "featured": true
   },
@@ -156,7 +156,7 @@
     "iconColor": "#3b82f6",
     "badge": ".NET 8 原生",
     "badgeClass": "badge-native",
-    "version": "v2.8.0",
+    "version": "v2.8.1",
     "action": "查看專案",
     "featured": true
   },
@@ -177,7 +177,7 @@
     "iconColor": "#0f766e",
     "badge": "Python 3.13",
     "badgeClass": "badge-ai",
-    "version": "v4.0.0",
+    "version": "v4.0.1",
     "action": "查看專案",
     "featured": true
   },
@@ -198,7 +198,7 @@
     "iconColor": "#8b5cf6",
     "badge": "Python 3.13",
     "badgeClass": "badge-ai",
-    "version": "v3.1.1",
+    "version": "V2.0.1",
     "action": "查看專案",
     "featured": false
   },
@@ -240,7 +240,7 @@
     "iconColor": "#5f8768",
     "badge": "Python 3.13",
     "badgeClass": "badge-ai",
-    "version": "v1.0.0",
+    "version": "v1.1.0",
     "action": "查看專案",
     "featured": false
   }
