@@ -45,6 +45,7 @@ REPO_MAPPING = {
     "auto-learning-bot": "07_auto-learning-bot",
     "Smart-Photo-Organizer": "10_Smart-Photo-Organizer",
     "ClipMask-AI": "12_ClipMask-AI",
+    "16_Wuxia-Typing-Legend": "16_Wuxia-Typing-Legend",
 }
 
 
@@ -84,13 +85,14 @@ def get_latest_git_tag(repo_path: Path) -> str | None:
 
 
 def detect_version_from_files(repo_path: Path) -> str | None:
-    """從 README.md 或常見設定檔中偵測版本號。"""
-    readme = repo_path / "README.md"
-    if readme.is_file():
-        text = readme.read_text(encoding="utf-8", errors="ignore")
-        match = re.search(r"v\d+\.\d+\.\d+", text)
-        if match:
-            return match.group(0)
+    """從 CHANGELOG.md、README.md 或常見設定檔中偵測版本號。"""
+    for doc_name in ("CHANGELOG.md", "README.md"):
+        doc = repo_path / doc_name
+        if doc.is_file():
+            text = doc.read_text(encoding="utf-8", errors="ignore")
+            match = re.search(r"v\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?", text)
+            if match:
+                return match.group(0)
 
     pkg = repo_path / "package.json"
     if pkg.is_file():

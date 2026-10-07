@@ -5,124 +5,70 @@
 - **Branch**：main
 - **Commit SHA**：b45fafd169684feb4641494c3578e572d23a7d79（本輪提交前基準；最新提交以 Git 記錄為準）
 - **Skill Version**：v1.0.0
-- **Task Type**：HANDOFF
+- **Task Type**：IMPROVE / HANDOFF
 - **Local Path Hint**：13_Project-Hub
 
 ## 目前狀態
-README 內容更新完成；本輪僅處理文件，產品與發布驗證沿用既有證據。
+可交付。已於 `13_Project-Hub` 新增第 13 張專案卡片「武俠打字傳｜新國風注音與英打闖關」及專屬封面圖 `images/banner_Wuxia-Typing-Legend.png`，並建立獨立完整說明頁 `wuxia_typing.html`（涵蓋專案概念 README、完整遊戲方法、三大境界 30 關與 7 大題本配置、五大階段開發歷程），同步更新 `README.md` 與 `FALLBACK_PROJECTS`，支援 `file:///` 本機直接開啟與 GitHub Pages 運作。
 
 ## 本輪目標
-補齊概念、開發原因、典型使用流程、已知 Bug／限制與問題回報方式，保留現有功能。
+將《武俠打字傳》（`16_Wuxia-Typing-Legend`）加入 `13_Project-Hub/index.html` 新增卡片並取適當名稱，同時將 README、開發歷程、遊戲方法一併整理完成。
 
 ## 基準與已確認事實 (Baseline & Confirmed Facts)
-先讀現行 README 與專案規則／來源，再增補文件；Git 與原文基準保存在中央 artifacts/readme-refresh-baseline。
+- `13_Project-Hub` 原展示 12 個公開專案，以 `data/projects.json` 為單一資料來源，並由 `scripts/sync_projects.py` 同步至 `assets/js/main.js` 的 `FALLBACK_PROJECTS` 以支援 `file:///` 直接瀏覽。
+- 《武俠打字傳》已部署至 `https://lianghao02.github.io/16_Wuxia-Typing-Legend/`（版本 `v1.0.0-beta.1`），並通過線上實測與 30/30 單元測試。
 
 ## 已完成 (Completed)
-2026-10-06 GitHub 同步交接：使用者已授權提交與推送前輪成果；本輪只提交已核對範圍。最新 Commit SHA、遠端同步與 CI 結果統一見控制中心 `docs/github-sync/RESULTS.md`，不將提交本身的 SHA 寫入同一份提交。
-
-已更新 README，區分已修復歷史、功能限制與待驗證事項，不憑空新增已確認 Bug。
+1. **新增《武俠打字傳｜新國風注音與英打闖關》卡片與封面圖**：
+   - 生成符合 `13_Project-Hub/images/` 標準比例（`1672×941`）之封面圖 `images/banner_Wuxia-Typing-Legend.png`。
+   - 於 `data/projects.json` 的 `web` 分類新增「武俠打字傳｜新國風注音與英打闖關」卡片（含 `guideUrl: "wuxia_typing.html"`、`guideLabel: "玩法與歷程"`）。
+   - 更新 `scripts/sync_projects.py` 納入 `16_Wuxia-Typing-Legend` 映射與預發版號（`-beta.1`）解析，執行 `--mode sync` 同步更新 `assets/js/main.js` 的 `FALLBACK_PROJECTS`。
+2. **新增《武俠打字傳》專屬介紹頁 `wuxia_typing.html` 與卡片／頁尾入口**：
+   - 建立 `wuxia_typing.html`，完整呈現：
+     - 一、專案概念與核心設計目標（大千注音免選字直拼、兒童防挫折格擋機制、教育部 4,311 字小字典與分題本獨立續玩）
+     - 二、完整遊戲方法與操作流程（四步驟修煉循環 ＋ 四色國風鍵帽指法圖解）
+     - 三、三大境界 30 關與 7 大修煉題本配置表
+     - 四、五大階段完整開發歷程（Phase 1 原型奠基 ～ Phase 5 公開試玩版）
+   - 於 `index.html` 與 `assets/js/main.js` 支援卡片底部「玩法與歷程」按鈕及頁尾「相關連結」入口，並更新預設專案統計為 `13+`。
+3. **更新 `README.md`**：
+   - 更新展示專案總覽表（共 13 個公開專案）並新增《武俠打字傳》專案說明、遊戲方法與五大階段開發歷程摘要。
 
 ## 異動檔案 (Changed Files)
-README.md、HANDOFF.md。
+- `data/projects.json`
+- `assets/js/main.js`
+- `index.html`
+- `wuxia_typing.html`（新增）
+- `images/banner_Wuxia-Typing-Legend.png`（新增）
+- `scripts/sync_projects.py`
+- `README.md`
+- `HANDOFF.md`
 
 ## 刻意未修改 (Do Not Do / Deliberately Omitted)
-產品程式、設定、環境、有效測試及使用者資料均未修改；未 Commit／Push。
+- 未改動既有 12 個專案的卡片連結與 `photo_report.html` 下載功能。
+- 未執行未授權的 `git commit` 或 `git push`。
 
 ## 尚未完成 (Remaining Work)
-- **P1 (阻斷/必須)**：無本輪文件阻斷。
-- **P2 (重要/當次)**：文件驗證結果由中央 docs/readme-refresh/RESULTS.md 彙整。
-- **P3 (改善建議/暫緩)**：產品功能與不同電腦的實測屬另一個任務，不以文件更新宣稱通過。
+- **P1 (阻斷/必須)**：無。
+- **P2 (重要/當次)**：無。
+- **P3 (改善建議/暫緩)**：待使用者確認後再提交並推送至 GitHub Pages。
 
 ## 驗證結果 (Validation)
 ### 已執行測試與結果
-本次只檢查文件結構、相對連結、差異與 Git／既有修改保護；結果見中央報告。
+- `python scripts/sync_projects.py --mode sync`：成功同步 13 個專案至 `data/projects.json` 與 `assets/js/main.js` `FALLBACK_PROJECTS`。
+- `python scripts/validate_projects.py`：`PASS: 13 projects validated`。
 ### 尚未驗證項目
-本輪未重新執行產品單元測試、GUI、遠端服務或發布驗證。
+- 依使用者指示（「先不用開 Playwright 測試，有需要在通知我開啟」），本輪未額外啟動 Playwright 視窗。
 ### 已知風險 (Known Risks)
-README 依現行來源與既有驗收整理，舊發布包不會自動包含原始碼修正。
+- 無。`FALLBACK_PROJECTS` 已同步，直接以 `file:///D:/Development/GitHub/13_Project-Hub/index.html` 開啟即可正常顯示第 13 張卡片與 `wuxia_typing.html` 說明頁。
 
 ## Git 狀態
-- Commit：上述 SHA 為提交前基準；最新 SHA 見 `git log -1` 與中央同步報告。
-- Push：實際推送及遠端核對結果見中央 `docs/github-sync/RESULTS.md`。
-- Working Tree：最終狀態見中央同步報告；不含被忽略的環境、成品與使用者資料。
-- Branch：main。
-
-## 下一步建議動作 (Next Recommended Action)
-文件檢查完成後停止擴大修改；有實際問題再以可重現資料另案處理。
-
-## 發布狀態 (Release Status)
-本輪未建立或發布新版本。
-
----
-
-## 承接前輪（歷史原文保留）
-
-# HANDOFF
-
-## 目前狀態
-可交付
-
-## 本輪目標
-校準 Project-Hub（https://lianghao02.github.io/Project-Hub/）展示專案之版本號與資料，解耦前端卡片版本欄位以支援可選／免版本號／狀態標籤模式，建立全自動同步工具，避免未來子專案更迭需繁瑣手動修改。
-
-## 已完成
-1. **全面校準 12 個專案版本號至真實最新狀態**：
-   - `Cell-Tower-Map-Locator`：`v3.2.0` -> `v3.2.1`
-   - `Photo-Report-Generator`：`v2.2.1` -> `v2.3.1`
-   - `Financial-Data-Parser`：`v1.7.0` -> `v1.7.1`
-   - `Calendar-Card-App`：`v1.1.2`（維持最新）
-   - `Police-Image-Toolkit`：`v11.2.0` -> `v11.4.0`
-   - `System-Optimizer-Tool`：`v6.2.1` -> `v6.2.3`
-   - `PaperSwitch`：`v4.0.0` -> `v4.3.0`
-   - `DesktopFramesPlus`：`v2.8.0` -> `v2.8.1`
-   - `AG-MONITOR-Smart-Video-Screening`：`v4.0.0` -> `v4.0.1`
-   - `auto-learning-bot`：`v3.1.1` -> `V2.0.1`
-   - `Smart-Photo-Organizer`：`v3.2.0`（維持最新）
-   - `ClipMask-AI`：`v1.0.0` -> `v1.1.0`
-2. **前端卡片渲染彈性解耦（支援不用版本號）**：
-   - 修改 `assets/js/main.js` 之 `createCard`，將 `version` 改為安全可選檢查。
-   - 若專案未填寫版本號或留空，前端自動優雅隱藏 `.version-tag`，卡片靠左排版維持自然大方，徹底避免版面留白破壞視覺。
-   - 若填寫通用狀態標籤（如「線上即用」、「開源釋出」）亦能完美渲染。
-3. **專案合規驗證器放寬相容性**：
-   - 修改 `scripts/validate_projects.py`，將 `version` 從強制必填項解鎖為可選字串檢查，支援免版本號合規性。
-4. **建立一鍵自動同步與備援工具**：
-   - 新增 `scripts/sync_projects.py`，支援：
-     - `--mode sync`：自動偵測同層相鄰 Repository 之最新 Git Tag / 文件版本並一鍵同步。
-     - `--mode strip`：一鍵清除所有微小版本號（不用版本號模式，永不過期）。
-     - `--mode status`：一鍵轉換為語意化長青交付標籤（Web: 線上即用、Native/AI: 開源釋出）。
-     - 自動同步更新 `assets/js/main.js` 之 `FALLBACK_PROJECTS`，徹底解決雙重資料來源脫鉤問題。
-5. **補齊標準 `.gitignore`**：
-   - 忽略 Python 快取（`__pycache__`）、作業系統暫存與測試快取。
-6. **更新說明文件**：
-   - `README.md` 載明同步工具用法、三種維護模式與可選版本號規範。
-
-## 刻意未修改
-- 未改動 `photo_report.html` 獨立歷史下載頁面與RAR檔案，保持原有相容性。
-- 未在純前端引入會觸發 GitHub API Rate Limit (60次/hr) 的 client-side 即時請求，遵循 JAMstack 構建期動態、執行期純靜態之最佳實踐。
-
-## 尚未完成
-無阻斷性與重要問題，所有目標均已達成。
-
-## 驗證結果
-### 已執行
-- `python scripts/sync_projects.py --mode sync`：自動偵測與同步成功，12 個專案全數完成更新。
-- `python scripts/validate_projects.py`：通過 12 個專案之資料結構、URL、圖片與分類合規檢查（PASS）。
-- Playwright E2E 本機實測（`file:///` 協定）：
-  - 驗證 `sync` 模式下最新版本號（v2.3.1, v11.4.0 等）精準顯示。
-  - 驗證 `strip` 模式下版本標籤優雅隱藏，卡片佈局自然完整、零破版。
-  - 驗證 `status` 模式下長青標籤（線上即用、開源釋出）精確渲染。
-
-### 尚未驗證
-- 無。
-
-### 已知風險
-- 無。
-
-## Git 狀態
-- Commit：02bc553
-- Push：是
-- Working Tree：Clean
+- Commit：b45fafd169684feb4641494c3578e572d23a7d79（本輪修改尚未提交）
+- Push：否
+- Working Tree：Modified
 - Branch：main
 
-## 下一步
-依使用者指令提交並推送至 GitHub main 分支，觸發 GitHub Actions 部署最新站點。
+## 下一步建議動作 (Next Recommended Action)
+直接開啟 `file:///D:/Development/GitHub/13_Project-Hub/index.html` 與 `file:///D:/Development/GitHub/13_Project-Hub/wuxia_typing.html` 檢視卡片與完整說明；確認無誤後即可 Commit 並 Push 部署。
+
+## 發布狀態 (Release Status)
+本機修改與驗證已完成，可隨時交付發布。

@@ -113,6 +113,29 @@ const FALLBACK_PROJECTS = [
       "featured": false
     },
     {
+      "name": "武俠打字傳｜新國風注音與英打闖關",
+      "category": "web",
+      "description": "專為臺灣國小學童打造的新國風水墨打字闖關教育遊戲。支援大千注音免選字直拼、一聲空白鍵與四色鍵帽指法引導，收錄教育部國語小字典 4,311 字、1～6 年級混合題本、國小英打與三大境界 30 關修煉。",
+      "tags": [
+        "HTML5 Canvas",
+        "大千注音免選字",
+        "教育部小字典",
+        "30 關闖關"
+      ],
+      "url": "https://lianghao02.github.io/16_Wuxia-Typing-Legend/",
+      "image": "images/banner_Wuxia-Typing-Legend.png",
+      "alt": "武俠打字傳｜新國風注音與英打闖關",
+      "icon": "fa-keyboard",
+      "iconColor": "#b45309",
+      "badge": "免安裝",
+      "badgeClass": "badge-web",
+      "version": "v1.0.0-beta.1",
+      "action": "開始修煉",
+      "guideUrl": "wuxia_typing.html",
+      "guideLabel": "玩法與歷程",
+      "featured": true
+    },
+    {
       "name": "警務影像轉檔與銳化器",
       "category": "native",
       "description": "Windows 原生 C# .NET 8 鑑識影像轉檔系統，支援 iPhone HEIC/WebP 高速多核心並行轉檔與 iPhone 4K 60fps MOV 原生硬體解碼播放。",
@@ -348,14 +371,27 @@ function createCard(project) {
     project.tags.forEach((tag) => tags.append(element("span", "tag", tag)));
   }
 
-  // 卡片底部（行動指引 + 箭頭按鈕）
+  // 卡片底部（行動指引 + 可選說明頁按鈕 + 箭頭按鈕）
   const footer = element("div", "card-footer");
+  const footerLeft = element("div", "card-footer-left");
   const actionHint = element("span", "action-hint", project.url.includes("github.io") ? "即開即用" : "開源專案");
+  footerLeft.append(actionHint);
+  if (project.guideUrl && typeof project.guideUrl === "string" && project.guideUrl.trim()) {
+    const guideBtn = element("button", "guide-btn");
+    guideBtn.type = "button";
+    guideBtn.innerHTML = `<i class="fa-solid fa-book-open" aria-hidden="true"></i> ${project.guideLabel || "專案說明"}`;
+    guideBtn.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      window.location.href = project.guideUrl;
+    });
+    footerLeft.append(guideBtn);
+  }
   const actionBtn = element("span", "action-btn", `${project.action} `);
   const arrow = element("i", "fa-solid fa-arrow-right");
   arrow.setAttribute("aria-hidden", "true");
   actionBtn.append(arrow);
-  footer.append(actionHint, actionBtn);
+  footer.append(footerLeft, actionBtn);
 
   body.append(meta, title, desc, tags, footer);
   card.append(banner, body);

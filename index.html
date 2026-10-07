@@ -560,6 +560,33 @@
       font-size: 0.76rem;
       color: var(--text-muted);
     }
+    .card-footer-left {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .guide-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(184, 93, 59, 0.35);
+      background: rgba(184, 93, 59, 0.08);
+      color: var(--accent-warm);
+      font-family: inherit;
+      font-size: 0.75rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background var(--transition), border-color var(--transition), transform var(--transition);
+    }
+    .guide-btn:hover {
+      background: var(--accent-warm);
+      border-color: var(--accent-warm);
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
 
     /* Empty State */
     .empty-state {
@@ -733,7 +760,7 @@
     
     <!-- Inline Stats Badges (Compact) -->
     <div class="hero-stats-line" aria-label="專案亮點統計">
-      <span class="stat-pill"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> <strong id="total-projects-stat">11+</strong> 個公開專案</span>
+      <span class="stat-pill"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> <strong id="total-projects-stat">13+</strong> 個公開專案</span>
       <span class="stat-pill"><i class="fa-solid fa-cubes" aria-hidden="true"></i> <strong>3</strong> 大技術領域</span>
       <span class="stat-pill"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> <strong>100%</strong> 本機離線安全</span>
     </div>
@@ -787,6 +814,7 @@
         <div class="footer-col-title">相關連結</div>
         <ul class="footer-links">
           <li><a href="https://github.com/lianghao02" target="_blank" rel="noopener noreferrer" class="footer-link"><i class="fa-brands fa-github"></i> GitHub Profile</a></li>
+          <li><a href="wuxia_typing.html" class="footer-link"><i class="fa-solid fa-keyboard"></i> 武俠打字傳・玩法與開發歷程</a></li>
           <li><a href="photo_report.html" class="footer-link"><i class="fa-solid fa-file-excel"></i> 經典照片清冊工具</a></li>
         </ul>
       </div>
