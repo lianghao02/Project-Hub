@@ -115,12 +115,12 @@ const FALLBACK_PROJECTS = [
     {
       "name": "武俠打字傳｜新國風注音與英打闖關",
       "category": "web",
-      "description": "專為臺灣國小學童打造的新國風水墨打字闖關教育遊戲。支援大千注音免選字直拼、一聲空白鍵與四色鍵帽指法引導，收錄教育部國語小字典 4,311 字、1～6 年級混合題本、國小英打與三大境界 30 關修煉。",
+      "description": "專為臺灣國小學童打造的新國風水墨打字闖關教育遊戲。v2.0.0「文印江湖」收錄六章 30 關完整故事、劍／刀／槍三流派與四大裝備部位、毒／火／冰屬性狀態與連打 2 字運功化解、Web Speech 語音朗讀及教育部小字典 4,311 字。",
       "tags": [
         "HTML5 Canvas",
-        "大千注音免選字",
-        "教育部小字典",
-        "30 關闖關"
+        "文印江湖 30 關",
+        "刀槍劍三流派",
+        "大千注音免選字"
       ],
       "url": "https://lianghao02.github.io/16_Wuxia-Typing-Legend/",
       "image": "images/banner_Wuxia-Typing-Legend.png",
@@ -129,7 +129,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#b45309",
       "badge": "免安裝",
       "badgeClass": "badge-web",
-      "version": "v1.0.0-beta.1",
+      "version": "v2.0.0",
       "action": "開始修煉",
       "guideUrl": "wuxia_typing.html",
       "guideLabel": "玩法與歷程",
@@ -212,7 +212,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#3b82f6",
       "badge": ".NET 8 原生",
       "badgeClass": "badge-native",
-      "version": "v2.8.1",
+      "version": "v2.9.4",
       "action": "查看專案",
       "featured": true
     },

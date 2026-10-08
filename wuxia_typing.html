@@ -497,11 +497,11 @@
         <div class="hero-badges">
           <span class="pill pill-warm"><i class="fa-solid fa-scroll"></i> 新國風水墨武俠教育遊戲</span>
           <span class="pill pill-green"><i class="fa-solid fa-keyboard"></i> 大千注音免選字 ＋ 國小英打</span>
-          <span class="pill pill-gold">v1.0.0-beta.1</span>
+          <span class="pill pill-gold">v2.0.0 文印江湖正式版</span>
         </div>
         <h1 class="hero-title">武俠打字傳 (Wuxia Typing Legend)</h1>
         <p class="hero-desc">
-          專為臺灣國小學童與初學者打造的<strong>新國風水墨打字闖關教育遊戲</strong>。將枯燥的「大千（標準）注音鍵盤指法」與「基礎英文單字輸入」轉化為劍客修煉與江湖闖關，結合<strong>免切輸入法逐音直拼</strong>、<strong>一聲空白鍵明確提示</strong>、<strong>兒童防挫折格擋機制</strong>與<strong>教育部《國語小字典》4,311 字離線字庫</strong>。
+          專為臺灣國小學童與初學者打造的<strong>新國風水墨打字闖關教育遊戲</strong>。<strong>v2.0.0「文印江湖」正式版</strong>整合六章三十關完整故事與六枚文印、<strong>劍／刀／槍三流派立繪與四大裝備部位</strong>、<strong>毒／火／冰屬性氣場與連打 2 字運功化解</strong>、<strong>Web Speech 中英發音朗讀</strong>，以及<strong>大千注音免選字直拼</strong>與<strong>教育部《國語小字典》4,311 字離線字庫</strong>。
         </p>
         <div class="hero-actions">
           <a href="https://lianghao02.github.io/16_Wuxia-Typing-Legend/" target="_blank" rel="noopener noreferrer" class="btn-primary">
@@ -520,16 +520,16 @@
             <div class="metric-lbl">教育部離線小字典</div>
           </div>
           <div class="metric-item">
-            <div class="metric-val">3 大境界 30 關</div>
-            <div class="metric-lbl">初入江湖至劍指巔峰</div>
+            <div class="metric-val">六章 30 關</div>
+            <div class="metric-lbl">文印江湖完整故事</div>
           </div>
           <div class="metric-item">
-            <div class="metric-val">7 大修煉題本</div>
-            <div class="metric-lbl">1~6 年級＋國小英文</div>
+            <div class="metric-val">劍・刀・槍</div>
+            <div class="metric-lbl">三流派＋四大裝備部位</div>
           </div>
           <div class="metric-item">
-            <div class="metric-val">61 件國風素材</div>
-            <div class="metric-lbl">三階立繪＋水墨特效</div>
+            <div class="metric-val">毒・火・冰</div>
+            <div class="metric-lbl">元素狀態＋語音朗讀</div>
           </div>
         </div>
       </div>
@@ -739,12 +739,12 @@
       </div>
     </section>
 
-    <!-- 四、五大階段完整開發歷程 -->
+    <!-- 四、六大階段完整開發歷程 -->
     <section id="dev-history" class="section">
       <div class="section-header">
         <span class="section-tag">Development History</span>
-        <h2 class="section-title"><i class="fa-solid fa-code-branch" style="color: var(--accent-warm);"></i> 四、五大階段完整開發歷程</h2>
-        <p class="section-sub">從雙語打字原型、教育部 4,311 字離線字典整合，到 61 件新國風水墨素材與國小分年級題本的完整演進紀錄。</p>
+        <h2 class="section-title"><i class="fa-solid fa-code-branch" style="color: var(--accent-warm);"></i> 四、六大階段完整開發歷程</h2>
+        <p class="section-sub">從雙語打字原型、教育部 4,311 字離線字典整合，到文印江湖六章冒險、刀槍劍三流派與屬性狀態正式版的完整演進紀錄。</p>
       </div>
 
       <div class="timeline">
@@ -804,6 +804,18 @@
             <li>將修煉選單重構為直覺的「一年級 ～ 六年級」混合題本（每關 10 題隨機抽樣中英詞彙）與「國小英文」專項，並將商店入口常駐於頂部導覽列。</li>
             <li>實作 <code>packProgress</code> 分題本獨立續玩機制，精準保存各題本的境界、關卡、題目與逐音進度，切換年級或重新整理網頁皆可無縫接續。</li>
             <li>通過 30 項 Node.js 自動化單元測試與 GitHub Pages 線上實測驗收，正式部署公開試玩網址。</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-head">
+            <h3 class="timeline-title">第六階段（Phase 6）：文印江湖六章冒險、刀槍劍三流派與屬性狀態正式版</h3>
+            <span class="timeline-tag">v2.0.0 正式版發布</span>
+          </div>
+          <ul>
+            <li><strong>文印江湖六章 30 關主線與四大裝備部位</strong>：建立山門初行、竹海尋信、古驛燈火、襄陽會武、月下墨閣、雲海歸字六章完整故事與六枚文印結局；擴充客棧為<strong>兵器（劍／刀／槍三流派立繪、烈焰刀罡／雷霆槍芒特效與專屬絕招）、護腕、防具、隨身丹藥</strong>四大部位。</li>
+            <li><strong>敵人毒／火／冰三屬性氣場與連打 2 字運功化解</strong>：新增碧磷毒功、烈焰灼掌、寒霜玄冰屬性法陣與全身染色；主角受擊染上狀態時，連續打對 2 字即可運功逼毒、滅火或破冰。</li>
+            <li><strong>Web Speech 零體積語音朗讀與跨螢幕零遮擋版面</strong>：整合中英發音朗讀、5／10／15 連擊水墨特效、過關朱紅印章與本關練功小錦囊；將「文印江湖」正式設為預設首頁 <code>index.html</code>（原版保留於 <code>classic.html</code>），通過 50 項單元測試與 11 組視窗尺寸／縮放無頭實測。</li>
           </ul>
         </div>
       </div>
