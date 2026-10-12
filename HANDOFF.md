@@ -3,9 +3,9 @@
 ## 核心元資料 (Metadata)
 - **Repository**：lianghao02/Project-Hub
 - **Branch**：main
-- **Commit SHA**：待提交（本輪完成全卡片仙俠武俠風更換與新專案擴充）
+- **Commit SHA**：2609ac2
 - **Skill Version**：v1.0.0
-- **Task Type**：IMPROVE / HANDOFF
+- **Task Type**：FEAT / HANDOFF
 - **Local Path Hint**：13_Project-Hub
 
 ## 目前狀態
