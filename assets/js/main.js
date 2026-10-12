@@ -191,7 +191,7 @@ const FALLBACK_PROJECTS = [
         "百草丹方推演",
         "手機雙欄檯"
       ],
-      "url": "https://github.com/lianghao02/AromaCraft-Studio",
+      "url": "https://lianghao02.github.io/AromaCraft-Studio/",
       "image": "images/banner_AromaCraft-Studio.png",
       "alt": "百草天香・神農玉液煉丹坊",
       "icon": "fa-spa",
