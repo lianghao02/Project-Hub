@@ -21,7 +21,7 @@ Project Hub 是對外展示專案定位、版本與下載入口的靜態網站�
 | **輕靈法寶 (Web SPA)** | **萬里烽火・天罡羅盤**｜電信基地台即時定位 | `v3.2.1` | [撥動羅盤](https://lianghao02.github.io/Cell-Tower-Map-Locator/) |
 | **輕靈法寶 (Web SPA)** | **天機百景・乾坤照影卷**｜現況照片清冊生成器 | `v2.3.2` | [展開圖卷](https://lianghao02.github.io/Photo-Report-Generator/) |
 | **輕靈法寶 (Web SPA)** | **九章靈算・金匱天籌錄**｜金融資料 CSV 轉 Excel | `v1.7.1` | [啟算靈石](https://lianghao02.github.io/Financial-Data-Parser/) |
-| **輕靈法寶 (Web SPA)** | **問道四時・太陰太陽時辰曆**｜卡片式行事曆 App | `v1.1.2` | [觀覽時序](https://lianghao02.github.io/Calendar-Card-App/) |
+| **輕靈法寶 (Web SPA)** | **問道四時・太陰太陽時辰曆**｜卡片式行事曆 App | `v1.2.0` | [觀覽時序](https://calendar-family-lianghao02.web.app/) |
 | **輕靈法寶 (Web SPA)** | **文印江湖・大千天機打字傳**｜新國風闖關 | `v2.0.0` | [拔劍修煉](https://lianghao02.github.io/16_Wuxia-Typing-Legend/) ｜ [文印劍訣歷程](wuxia_typing.html) |
 | **輕靈法寶 (Web SPA)** | **尋龍探脈・玄天鏈流照妖鑑**｜鏈上金流查核 | `v1.6.0` | [探察鏈流](https://github.com/lianghao02/chainflow-inspector) |
 | **輕靈法寶 (Web SPA)** | **乾坤節度・靈石月俸度支司**｜固定支出管家 | `v0.1.0` | [執掌度支](https://subscription-ledger-f77fd.web.app) |

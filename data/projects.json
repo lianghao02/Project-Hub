@@ -72,14 +72,14 @@
       "時序青簡",
       "GAS 雲端符契"
     ],
-    "url": "https://lianghao02.github.io/Calendar-Card-App/",
+    "url": "https://calendar-family-lianghao02.web.app/",
     "image": "images/banner_Calendar-Card-App.png",
     "alt": "問道四時・太陰太陽時辰曆",
     "icon": "fa-calendar-check",
     "iconColor": "#10b981",
     "badge": "天機免安裝",
     "badgeClass": "badge-web",
-    "version": "v1.1.2",
+    "version": "v1.2.0",
     "action": "觀覽時序",
     "featured": false
   },
