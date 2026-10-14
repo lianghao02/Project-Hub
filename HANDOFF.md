@@ -65,3 +65,56 @@
 
 ## 下一步建議動作 (Next Recommended Action)
 執行 `git commit` 與 `git push`，GitHub Pages 將自動部署最新武道天機・神兵法寶靈鑑展示入口。
+
+## 2026-10-14 展示版本資料修正交接
+
+### 核心元資料 (Metadata)
+- **Repository**：lianghao02/Project-Hub
+- **Branch**：main
+- **Commit SHA**：75c28585ffb6cce2296a7d016045438776c061ff（本輪修改前基準；成果 SHA 以 Git log 為準）
+- **Skill Version**：v1.0.0
+- **Task Type**：FIX
+- **Local Path Hint**：13_Project-Hub
+
+### 目前狀態
+本機修訂與驗證完成；使用者已授權本輪提交、推送與 Pages 發布。部署結果以 Actions 與正式站資料核對。
+
+### 本輪目標
+修正過期展示版本，同步 JSON、前端備援與 README，保留既有展示風格。
+
+### 基準與已確認事實 (Baseline & Confirmed Facts)
+開始時 main／origin/main 同步，Working Tree Clean。照片清冊正式 v2.3.2、訂閱小帳正式 v1.1.0、AromaCraft Pages 正式 v1.5.0，依各專案發布／交接紀錄核對。AromaCraft Apps Script 仍為 v1.3.2，不與 Pages 混用。
+
+### 已完成 (Completed)
+更新上述三張卡片版本；README 展示表同步，另將已在 JSON 的打字傳 v2.1.0、Takeout 整理 v1.2.0 對齊表格。移除照片清冊 v2.3.1 寫死分支，補齊兩個 Firebase 網址的本機對應。新增 --mode fallback，保留人工核對的 JSON 版本，只同步備援，避免候選 Tag／開發文件覆蓋正式站版號。
+
+### 異動檔案 (Changed Files)
+data/projects.json、assets/js/main.js、scripts/sync_projects.py、README.md、HANDOFF.md。
+
+### 刻意未修改 (Do Not Do / Deliberately Omitted)
+CSS、首頁結構、橫幅、展示文風、歷史功能介紹、其他 Repository 未修改；本輪沿用既有 Pages 流程發布。PaperSwitch 尚未核對新正式發行標記，保留 v4.3.0 展示版本。
+
+### 尚未完成 (Remaining Work)
+- **P1 (阻斷/必須)**：無本機修訂阻斷。
+- **P2 (重要/當次)**：無資料／同步工具驗證失敗。
+- **P3 (改善建議/暫緩)**：正式部署畫面實測仍未完成；發布以 Actions 與正式資料讀回核對。
+
+### 驗證結果 (Validation)
+#### 已執行測試與結果
+17 張卡片資料驗證通過；5 項同步回歸（照片清冊不再寫死、fallback 不偵測、兩個 Firebase 對應、未知來源保留原版本）通過。17 張卡片 JSON／FALLBACK_PROJECTS 深度相等且 README 表格版號一致；main.js 語法與 git diff --check 通過。
+#### 尚未驗證項目
+內建 Browser 不可用；Chrome 可連線但安全政策拒絕 file://，未繞過限制，未宣稱畫面實測或正式站更新。
+#### 已知風險 (Known Risks)
+既有 sync 模式仍產生候選版本，必須核對正式發布，不能直接將開發版或舊 Tag 當成正式網站版本。
+
+### Git 狀態
+- Commit：本輪修訂提交，實際 SHA 見 Git log。
+- Push：已獲使用者本次明確授權，結果以 origin/main SHA 核對。
+- Working Tree：本輪僅上述五份檔案，提交後由 git status 核對。
+- Branch：main。
+
+### 下一步建議動作 (Next Recommended Action)
+依既有 main 推送流程部署，核對 Actions、正式 projects.json 與 main.js 內容；有新問題才開下一輪修正。
+
+### 發布狀態 (Release Status)
+本輪依使用者授權發布展示資料，不建立應用程式 Release 或新版本標記；以 Actions 與正式站資料讀回確認完成。

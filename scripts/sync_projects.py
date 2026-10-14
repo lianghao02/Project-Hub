@@ -3,9 +3,10 @@
 支援功能：
 1. 自動偵測同層相鄰 Repository 之最新 Git Tag 或文件版本。
 2. 模式切換：
-   --mode sync   : 同步最新真實版本號 (預設)
+   --mode sync   : 同步候選版本號，仍須核對發布狀態 (預設)
    --mode strip  : 移除微小版本號（不用版本號，一勞永逸）
    --mode status : 轉為語意化長青標籤（如：線上即用、開源釋出）
+   --mode fallback : 保留已核對的 JSON 版本，只同步前端備援資料
 3. 自動將 data/projects.json 同步更新至 assets/js/main.js 之 FALLBACK_PROJECTS。
 4. 自動呼叫 validate_projects 確保格式合規。
 """
@@ -33,6 +34,8 @@ PARENT_DIR = ROOT.parent
 
 # 專案 URL 關鍵字 -> 本機 Repository 資料夾名稱對照表（若同層目錄存在）
 REPO_MAPPING = {
+    "calendar-family-lianghao02.web.app": "11_Calendar-Card-App",
+    "subscription-ledger-f77fd.web.app": "17_Subscription-Manager",
     "Cell-Tower-Map-Locator": "02_Cell-Tower-Map-Locator",
     "Photo-Report-Generator": "04_Photo-Report-Generator",
     "Financial-Data-Parser": "08_Financial-Data-Parser",
@@ -113,6 +116,9 @@ def detect_version_from_files(repo_path: Path) -> str | None:
 
 def resolve_project_version(project: dict[str, Any], mode: str) -> str:
     """依據指定模式決定專案的 version 欄位值。"""
+    if mode == "fallback":
+        return project.get("version", "")
+
     if mode == "strip":
         return ""
 
@@ -124,10 +130,6 @@ def resolve_project_version(project: dict[str, Any], mode: str) -> str:
 
     # mode == "sync": 優先偵測本地 repo
     url = project.get("url", "")
-
-    # 特殊處理：Photo-Report-Generator 最新已發布 v2.3.1
-    if "Photo-Report-Generator" in url:
-        return "v2.3.1"
 
     repo_dir = find_repo_dir(url)
     if repo_dir:
@@ -185,9 +187,9 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="同步 Project-Hub 專案版本號與備援資料")
     parser.add_argument(
         "--mode",
-        choices=["sync", "strip", "status"],
+        choices=["sync", "strip", "status", "fallback"],
         default="sync",
-        help="執行模式：sync (同步最新 Tag)、strip (移除版號)、status (改為長青狀態標籤)",
+        help="執行模式：sync (同步候選版本)、strip (移除版號)、status (長青標籤)、fallback (只同步已核對資料)",
     )
     args = parser.parse_args()
 
