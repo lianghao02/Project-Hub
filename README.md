@@ -14,7 +14,7 @@ Project Hub 是對外展示專案定位、版本與下載入口的靜態網站�
 
 ---
 
-## 展示專案總覽（共 17 件神兵法寶）
+## 展示專案總覽（共 16 件神兵法寶）
 
 | 分類 | 法寶名號 / 專案名稱 | 版本 | 入口 / 說明頁 |
 |---|---|---|---|
@@ -30,10 +30,9 @@ Project Hub 是對外展示專案定位、版本與下載入口的靜態網站�
 | **玄鐵神兵 (.NET 8)** | **太清滌塵・靈脈疏通歸元訣**｜系統快取清理 | `v6.2.3` | [運轉歸元](https://github.com/lianghao02/System-Optimizer-Tool) |
 | **玄鐵神兵 (.NET 8)** | **裁雲剪雪・玉版符牒工坊**｜PaperSwitch 文件轉檔 | `v4.3.0` | [裁雲印製](https://github.com/lianghao02/PaperSwitch) |
 | **玄鐵神兵 (.NET 8)** | **星宿分疆・乾坤芥子八卦閣**｜桌面分區面板 | `v2.9.4` | [布設結界](https://github.com/lianghao02/DesktopFramesPlus) |
-| **玄鐵神兵 (.NET 8)** | **滄海擷珠・雲笈玉牒歸真法**｜Google 相簿整理 | `v1.2.0` | [擷珠歸真](https://github.com/lianghao02/14_Google-Photos-Takeout-Organizer) |
+| **通天靈識 (Python)** | **滄海擷珠・雲笈玉牒歸真法**｜Google 相簿整理 | `v1.3.0` | [擷珠歸真](https://github.com/lianghao02/14_Google-Photos-Takeout-Organizer) |
 | **通天靈識 (Python)** | **大衍追風・天眼快篩搜神陣**｜科技鑑識快篩 | `v4.0.1` | [啟動搜神](https://github.com/lianghao02/AG-MONITOR-Smart-Video-Screening) |
 | **通天靈識 (Python)** | **天機偃師・藏經破陣機巧人**｜研習自動化機器人 | `V2.0.1` | [驅策機關](https://github.com/lianghao02/auto-learning-bot) |
-| **通天靈識 (Python)** | **萬象歸藏・靈犀納寶收納訣**｜智慧相片自動分類 | `v3.2.0` | [開匣納寶](https://github.com/lianghao02/Smart-Photo-Organizer) |
 | **通天靈識 (Python)** | **無相神隱・玄武閉息去識術**｜影音去識別與聽打 | `v1.1.0` | [施展無相](https://github.com/lianghao02/ClipMask-AI) |
 
 ---

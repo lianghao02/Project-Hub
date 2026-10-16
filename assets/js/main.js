@@ -303,7 +303,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#38bdf8",
       "badge": "本機無損純陽",
       "badgeClass": "badge-native",
-      "version": "v1.2.0",
+      "version": "v1.3.0",
       "action": "擷珠歸真",
       "featured": true
     },
@@ -347,27 +347,6 @@ const FALLBACK_PROJECTS = [
       "badgeClass": "badge-ai",
       "version": "V2.0.1",
       "action": "驅策機關",
-      "featured": false
-    },
-    {
-      "name": "萬象歸藏・靈犀納寶收納訣｜相片智慧分類",
-      "category": "ai",
-      "description": "世間萬象留影散落四方，施展 dHash 感知辨識密法，一息溯源歸類。串流解壓、Windows 捷徑審核與安全隔離歸檔，分門別類存入靈虛寶匣，零遺漏、不傷本真。",
-      "tags": [
-        "Python 3.13",
-        "pywebview",
-        "Takeout 串流",
-        "dHash 靈識辨別"
-      ],
-      "url": "https://github.com/lianghao02/Smart-Photo-Organizer",
-      "image": "images/banner_Smart-Photo-Organizer.png",
-      "alt": "萬象歸藏・靈犀納寶收納訣",
-      "icon": "fa-box-archive",
-      "iconColor": "#3b82f6",
-      "badge": "Python 3.13 靈識",
-      "badgeClass": "badge-ai",
-      "version": "v3.2.0",
-      "action": "開匣納寶",
       "featured": false
     },
     {
