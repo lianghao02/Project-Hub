@@ -3,6 +3,63 @@
 ## 核心元資料 (Metadata)
 - **Repository**：lianghao02/Project-Hub
 - **Branch**：main
+- **Commit SHA**：da7a549602a56c3522d61521e82801f66de72c61（本輪修改前基準；交付提交以包含本交接的 Git 記錄為準）
+- **Skill Version**：v1.0.0
+- **Task Type**：FIX
+- **Local Path Hint**：13_Project-Hub
+
+## 目前狀態
+2026-10-16：目前展示 16 件作品；四張卡片的版本與用途標示已校正，本輪提交推送後核對 Pages 部署。
+
+## 本輪目標
+修正已確認的四個版號落差與當前件數。
+
+## 基準與已確認事實 (Baseline & Confirmed Facts)
+起始 main／da7a549，工作目錄乾淨；版本依本次遠端查核及版本來源核對。
+
+## 已完成 (Completed)
+基地臺定位線上 v3.2.2、武俠打字傳線上 v2.2.3、精油工作室線上 v1.6.0；PaperSwitch 下載 v4.4.2（已透過 GitHub Release API 核對）。JSON 與離線備援同步，README 件數修正為 16。
+
+## 異動檔案 (Changed Files)
+data/projects.json、assets/js/main.js、README.md、HANDOFF.md。
+
+## 刻意未修改 (Do Not Do / Deliberately Omitted)
+未修改來源資產、既有發布包、全域憲法與共用 Skills；本輪提交並推送既有修正，不另建立 Release。
+
+## 尚未完成 (Remaining Work)
+- **P1 (阻斷/必須)**：本輪展示資訊修正無阻斷項目。
+- **P2 (重要/當次)**：未重新驗收所有作品與下載包；Pages 部署結果以最新 Actions 與線上資料為準。其他既有版號不推定為最新下載版。
+- **P3 (改善建議/暫緩)**：其他專案重構不在本輪範圍。
+
+## 驗證結果 (Validation)
+### 已執行測試與結果
+validate_projects.py：16 件資料通過；node --check 通過。內建瀏覽器確認四張版本標示、文件關鍵字篩選僅顯示 PaperSwitch 下載 v4.4.2，console error 0。本輪再次核對武俠卡片為線上 v2.2.3，16 筆資料與 JavaScript 語法檢查通過。
+### 尚未驗證項目
+未重新驗收所有作品與下載包；Pages 部署結果以最新 Actions 與線上資料為準。其他既有版號不推定為最新下載版。
+### 已知風險 (Known Risks)
+原始碼修正不會自動更新既有下載包或正式部署。
+
+## Git 狀態
+- Commit：本輪差異獨立提交；SHA 以包含本交接的 Git 記錄為準。
+- Push：交付時核對 HEAD 與遠端追蹤分支一致。
+- Working Tree：提交後以 git status 確認，未納入無關修改。
+- Branch：main。
+
+## 下一步建議動作 (Next Recommended Action)
+依授權提交並推送後，再核對 Pages 部署結果。
+
+## 發布狀態 (Release Status)
+本機驗證完成；推送 main 後由既有 Pages 流程部署。
+
+---
+
+## 歷史交接快照（以下不是當前待辦或測試結果）
+
+# HANDOFF
+
+## 核心元資料 (Metadata)
+- **Repository**：lianghao02/Project-Hub
+- **Branch**：main
 - **Commit SHA**：2609ac2
 - **Skill Version**：v1.0.0
 - **Task Type**：FEAT / HANDOFF

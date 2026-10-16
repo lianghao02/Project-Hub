@@ -18,17 +18,17 @@ Project Hub 是對外展示專案定位、版本與下載入口的靜態網站�
 
 | 分類 | 法寶名號 / 專案名稱 | 版本 | 入口 / 說明頁 |
 |---|---|---|---|
-| **輕靈法寶 (Web SPA)** | **萬里烽火・天罡羅盤**｜電信基地台即時定位 | `v3.2.1` | [撥動羅盤](https://lianghao02.github.io/Cell-Tower-Map-Locator/) |
+| **輕靈法寶 (Web SPA)** | **萬里烽火・天罡羅盤**｜電信基地台即時定位 | `線上 v3.2.2` | [撥動羅盤](https://lianghao02.github.io/Cell-Tower-Map-Locator/) |
 | **輕靈法寶 (Web SPA)** | **天機百景・乾坤照影卷**｜現況照片清冊生成器 | `v2.3.2` | [展開圖卷](https://lianghao02.github.io/Photo-Report-Generator/) |
 | **輕靈法寶 (Web SPA)** | **九章靈算・金匱天籌錄**｜金融資料 CSV 轉 Excel | `v1.7.1` | [啟算靈石](https://lianghao02.github.io/Financial-Data-Parser/) |
 | **輕靈法寶 (Web SPA)** | **問道四時・太陰太陽時辰曆**｜卡片式行事曆 App | `v1.2.0` | [觀覽時序](https://calendar-family-lianghao02.web.app/) |
-| **輕靈法寶 (Web SPA)** | **文印江湖・大千天機打字傳**｜新國風闖關 | `v2.1.0` | [拔劍修煉](https://lianghao02.github.io/16_Wuxia-Typing-Legend/) ｜ [文印劍訣歷程](wuxia_typing.html) |
+| **輕靈法寶 (Web SPA)** | **文印江湖・大千天機打字傳**｜新國風闖關 | `線上 v2.2.3` | [拔劍修煉](https://lianghao02.github.io/16_Wuxia-Typing-Legend/) ｜ [文印劍訣歷程](wuxia_typing.html) |
 | **輕靈法寶 (Web SPA)** | **尋龍探脈・玄天鏈流照妖鑑**｜鏈上金流查核 | `v1.6.0` | [探察鏈流](https://github.com/lianghao02/chainflow-inspector) |
 | **輕靈法寶 (Web SPA)** | **乾坤節度・靈石月俸度支司**｜固定支出管家 | `v1.1.0` | [執掌度支](https://subscription-ledger-f77fd.web.app) |
-| **輕靈法寶 (Web SPA)** | **百草天香・神農玉液煉丹坊**｜手作精油配方管理 | `v1.5.0` | [開爐調香](https://lianghao02.github.io/AromaCraft-Studio/) |
+| **輕靈法寶 (Web SPA)** | **百草天香・神農玉液煉丹坊**｜手作精油配方管理 | `線上 v1.6.0` | [開爐調香](https://lianghao02.github.io/AromaCraft-Studio/) |
 | **玄鐵神兵 (.NET 8)** | **破妄神目・照妖鑑真神兵錄**｜警務影像轉檔銳化 | `v11.4.0` | [祭出神目](https://github.com/lianghao02/Police-Image-Toolkit) |
 | **玄鐵神兵 (.NET 8)** | **太清滌塵・靈脈疏通歸元訣**｜系統快取清理 | `v6.2.3` | [運轉歸元](https://github.com/lianghao02/System-Optimizer-Tool) |
-| **玄鐵神兵 (.NET 8)** | **裁雲剪雪・玉版符牒工坊**｜PaperSwitch 文件轉檔 | `v4.3.0` | [裁雲印製](https://github.com/lianghao02/PaperSwitch) |
+| **玄鐵神兵 (.NET 8)** | **裁雲剪雪・玉版符牒工坊**｜PaperSwitch 文件轉檔 | `下載 v4.4.2` | [裁雲印製](https://github.com/lianghao02/PaperSwitch) |
 | **玄鐵神兵 (.NET 8)** | **星宿分疆・乾坤芥子八卦閣**｜桌面分區面板 | `v2.9.4` | [布設結界](https://github.com/lianghao02/DesktopFramesPlus) |
 | **通天靈識 (Python)** | **滄海擷珠・雲笈玉牒歸真法**｜Google 相簿整理 | `v1.3.0` | [擷珠歸真](https://github.com/lianghao02/14_Google-Photos-Takeout-Organizer) |
 | **通天靈識 (Python)** | **大衍追風・天眼快篩搜神陣**｜科技鑑識快篩 | `v4.0.1` | [啟動搜神](https://github.com/lianghao02/AG-MONITOR-Smart-Video-Screening) |
@@ -105,7 +105,7 @@ python scripts/validate_projects.py
 ```text
 .
 ├─ assets/js/main.js              # 載入 metadata 並渲染卡片（含 file:/// 離線 FALLBACK_PROJECTS）
-├─ data/projects.json             # 展示資料單一來源（共 17 件神兵法寶）
+├─ data/projects.json             # 展示資料單一來源（共 16 件神兵法寶）
 ├─ docs/BASELINE.md               # 重構前網站基準
 ├─ downloads/                     # photo_report.html 使用的必要下載檔
 ├─ images/                        # 專案卡片圖片（含 banner_Wuxia-Typing-Legend.png）
@@ -134,3 +134,7 @@ python scripts/validate_projects.py
 ### 問題回報
 
 請提供使用版本／啟動方式、作業系統與相關環境、重現步驟、預期及實際結果，以及去識別的錯誤訊息或最小樣本。先保留現場與來源資料；不要附真實案件、完整帳號、密碼、Token 或 API Key。版本修正以對應原始碼與發行包為準。
+
+## 版本標示範圍
+
+2026-10-16 校正：基地臺定位、武俠打字傳與精油工作室標示線上版本；PaperSwitch 標示已核對 Release 的下載版本。線上或原始碼更新不代表下載包已更新；武俠打字傳正式 Release 仍為 v2.2.0。其他既有版號維持其原有來源，不推定為最新下載版。`sync_projects.py --mode sync` 只產生候選版號，發布前須核對分支與部署；`--mode fallback` 才會保留已核對資料並更新離線備援。

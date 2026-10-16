@@ -49,9 +49,10 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#0ea5e9",
       "badge": "天機免安裝",
       "badgeClass": "badge-web",
-      "version": "v3.2.1",
+      "version": "v3.2.2",
       "action": "撥動羅盤",
-      "featured": true
+      "featured": true,
+      "versionLabel": "線上"
     },
     {
       "name": "天機百景・乾坤照影卷｜照片清冊生成器",
@@ -133,11 +134,12 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#b45309",
       "badge": "天機免安裝",
       "badgeClass": "badge-web",
-      "version": "v2.1.0",
+      "version": "v2.2.3",
       "action": "拔劍修煉",
       "guideUrl": "wuxia_typing.html",
       "guideLabel": "文印劍訣歷程",
-      "featured": true
+      "featured": true,
+      "versionLabel": "線上"
     },
     {
       "name": "尋龍探脈・玄天鏈流照妖鑑｜鏈上金流查核",
@@ -198,9 +200,10 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#84cc16",
       "badge": "天機免安裝",
       "badgeClass": "badge-web",
-      "version": "v1.5.0",
+      "version": "v1.6.0",
       "action": "開爐調香",
-      "featured": false
+      "featured": false,
+      "versionLabel": "線上"
     },
     {
       "name": "破妄神目・照妖鑑真神兵錄｜影像銳化鑑識",
@@ -261,9 +264,10 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#ef4444",
       "badge": ".NET 8 混元真氣",
       "badgeClass": "badge-native",
-      "version": "v4.3.0",
+      "version": "v4.4.2",
       "action": "裁雲印製",
-      "featured": true
+      "featured": true,
+      "versionLabel": "下載"
     },
     {
       "name": "星宿分疆・乾坤芥子八卦閣｜桌面分區面板",
@@ -421,7 +425,8 @@ function createCard(project) {
   meta.append(badgeSubtle);
 
   if (project.version && typeof project.version === "string" && project.version.trim()) {
-    const versionTag = element("span", "version-tag", project.version.trim());
+    const label = project.versionLabel ? `${project.versionLabel} ` : "";
+    const versionTag = element("span", "version-tag", `${label}${project.version.trim()}`);
     meta.append(versionTag);
   }
 
