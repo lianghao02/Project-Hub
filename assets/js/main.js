@@ -440,10 +440,36 @@ function createCard(project) {
   // 專案描述
   const desc = element("p", "card-desc", project.description);
 
-  // 技術標籤庫
+  // 技術標籤庫（支援點擊即時過濾）
   const tags = element("div", "tags");
   if (Array.isArray(project.tags)) {
-    project.tags.forEach((tag) => tags.append(element("span", "tag", tag)));
+    const activeQuery = searchQuery.trim().toLowerCase();
+    project.tags.forEach((tag) => {
+      const isTagActive = activeQuery && activeQuery === tag.toLowerCase();
+      const tagEl = element("span", `tag${isTagActive ? " is-active" : ""}`, tag);
+      tagEl.setAttribute("role", "button");
+      tagEl.setAttribute("tabindex", "0");
+      tagEl.title = isTagActive ? `取消「${tag}」篩選` : `點擊篩選「${tag}」相關法寶`;
+      const handleTagClick = (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        const searchInput = document.getElementById("project-search");
+        if (searchQuery.trim().toLowerCase() === tag.toLowerCase()) {
+          searchQuery = "";
+        } else {
+          searchQuery = tag;
+        }
+        if (searchInput) searchInput.value = searchQuery;
+        applyFilter();
+      };
+      tagEl.addEventListener("click", handleTagClick);
+      tagEl.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          handleTagClick(event);
+        }
+      });
+      tags.append(tagEl);
+    });
   }
 
   // 卡片底部（行動指引 + 可選說明頁按鈕 + 箭頭按鈕）
@@ -624,11 +650,18 @@ function setupControls() {
       applyFilter();
     });
 
-    // 支援快捷鍵 '/' 或 'Ctrl+K' 快速聚焦搜尋
+    // 支援快捷鍵 '/' 或 'Ctrl+K' 快速聚焦搜尋，'Escape' 一鍵重置
     window.addEventListener("keydown", (e) => {
       if ((e.key === "/" && document.activeElement !== searchInput) || (e.ctrlKey && e.key.toLowerCase() === "k")) {
         e.preventDefault();
         searchInput.focus();
+      } else if (e.key === "Escape" && (searchQuery || currentCategory !== "all")) {
+        searchInput.value = "";
+        searchQuery = "";
+        currentCategory = "all";
+        updateActiveTab();
+        applyFilter();
+        searchInput.blur();
       }
     });
   }

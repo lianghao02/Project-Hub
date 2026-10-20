@@ -1,0 +1,240 @@
+/**
+ * 🎮 2D 遊戲風格與 Q 版 Chunky UI 核心 Design Tokens (game-2d-tokens.css)
+ * 專為 Web 工具、展示頁與控制台打造的工業級 2D 遊戲風格樣式系統
+ * 核心準則：
+ *  1. 實體描邊與硬陰影（Hard Drop Shadow，無模糊漸層，實體街機壓感回饋）
+ *  2. 嚴格高對比度（WCAG AAA 標竿，深炭黑文字 #0F172A，拒絕低飽和灰濛濛）
+ *  3. Q 版圓潤方塊體系（12~16px 幾何圓角，厚實飽滿）
+ *  4. 業務功能保留（清楚文字與無障礙可讀性）
+ */
+
+:root {
+  /* --- 畫布與面板底色 (Canvas & Surfaces) --- */
+  --game-bg: #F7F3E9;                     /* 暖米黃冒險地圖底色 */
+  --game-bg-pattern: #E4DCCF;             /* 畫布網格點陣紋理色 */
+  --game-surface: #FFFFFF;                /* 卡片與主視窗純白底色 */
+  --game-surface-warm: #FFFDF7;           /* 次級面板暖白底色 */
+  --game-surface-subtle: #F1EFE6;         /* 內嵌區塊、標籤、表頭底色 */
+  --game-surface-dark: #1E293B;           /* 深色表頭與反色面板底色 */
+
+  /* --- 2D 實體框線與輪廓 (Chunky Outlines) --- */
+  --game-border-color: #1E293B;          /* 核心墨黑描邊色（深邃青灰黑，非死黑） */
+  --game-border-color-muted: #475569;    /* 次級弱化描邊色 */
+  --game-border-width: 2.5px;            /* 主邊框標準厚度 */
+  --game-border-width-sm: 1.5px;         /* 標籤、小元件邊框厚度 */
+  --game-border-width-lg: 3.5px;         /* 外層視窗、主容器邊框厚度 */
+
+  --game-outline: var(--game-border-width) solid var(--game-border-color);
+  --game-outline-sm: var(--game-border-width-sm) solid var(--game-border-color);
+  --game-outline-lg: var(--game-border-width-lg) solid var(--game-border-color);
+
+  /* --- 2D 實體位移陰影 (Arcade Hard Drop Shadows) --- */
+  --game-shadow-card: 0 6px 0 var(--game-border-color);
+  --game-shadow-card-hover: 2px 8px 0 var(--game-border-color);
+  --game-shadow-btn: 0 4px 0 var(--game-border-color);
+  --game-shadow-btn-hover: 0 5px 0 var(--game-border-color);
+  --game-shadow-btn-active: 0 1px 0 var(--game-border-color);
+  --game-shadow-badge: 0 2px 0 var(--game-border-color);
+  --game-shadow-panel: 0 8px 0 var(--game-border-color);
+
+  /* --- 文字與排印系統（超高對比度，防缺字漏字） --- */
+  --game-text-main: #0F172A;              /* 主標題與關鍵文字（對比度 > 15:1） */
+  --game-text-sub: #334155;               /* 說明文字與副標（對比度 > 8:1） */
+  --game-text-muted: #475569;             /* 次要註記與標籤（對比度 > 5:1） */
+  --game-text-on-dark: #FFFFFF;           /* 深色按鈕與深色表頭上的反白文字 */
+  --game-font-stack: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+
+  /* --- 2D Q版遊戲主色調矩陣 (Vibrant & Legible Palette) --- */
+  --game-gold: #FFD23F;                   /* 琥珀金幣黃（精選、等級、主引導） */
+  --game-gold-hover: #FBBF24;
+  --game-gold-bg: #FEF9C3;
+
+  --game-blue: #2563EB;                   /* 勇者電漿藍（執行、主要行動）；白字 5.2:1 */
+  --game-blue-hover: #1D4ED8;
+  --game-blue-bg: #EFF6FF;
+
+  --game-green: #10B981;                  /* 翡翠補給綠（成功、Web、線上） */
+  --game-green-hover: #059669;
+  --game-green-bg: #ECFDF5;
+
+  --game-purple: #8B5CF6;                 /* 奧術靈識紫（AI、特別功能） */
+  --game-purple-hover: #7C3AED;
+  --game-purple-bg: #F5F3FF;
+
+  --game-orange: #C2410C;                 /* 鍛造烈焰橘（指南、說明、警示）；白字 5.2:1 */
+  --game-orange-hover: #9A3412;
+  --game-orange-bg: #FFF7ED;
+
+  --game-red: #EF4444;                    /* 危機警戒紅（危險、刪除、停止） */
+  --game-red-hover: #DC2626;
+  --game-red-bg: #FEF2F2;
+
+  /* --- Q 版幾何圓角 (Chunky Radii) --- */
+  --game-radius-card: 16px;
+  --game-radius-btn: 12px;
+  --game-radius-badge: 8px;
+  --game-radius-pill: 9999px;
+
+  /* --- 互動手感過渡 --- */
+  --game-transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ========================================================
+   基礎 2D 遊戲通用元件樣式
+   ======================================================== */
+
+/* 2D 方塊卡片 */
+.game-card {
+  background: var(--game-surface);
+  border: var(--game-outline);
+  border-radius: var(--game-radius-card);
+  box-shadow: var(--game-shadow-card);
+  transition: var(--game-transition);
+  position: relative;
+  overflow: hidden;
+}
+.game-card:hover {
+  transform: translate(-1px, -2px);
+  box-shadow: var(--game-shadow-card-hover);
+}
+
+/* 2D 街機實體按鍵 */
+.game-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.15rem;
+  font-family: var(--game-font-stack);
+  font-size: 0.92rem;
+  font-weight: 800;
+  text-decoration: none;
+  border: var(--game-outline);
+  border-radius: var(--game-radius-btn);
+  box-shadow: var(--game-shadow-btn);
+  cursor: pointer;
+  transition: var(--game-transition);
+  user-select: none;
+  line-height: 1.25;
+}
+.game-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--game-shadow-btn-hover);
+}
+.game-btn:active {
+  transform: translateY(3px);
+  box-shadow: var(--game-shadow-btn-active);
+}
+.game-btn:disabled,
+.game-btn[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: 0 2px 0 var(--game-border-color) !important;
+}
+
+/* 按鍵色彩變體 */
+.game-btn-gold {
+  background: var(--game-gold);
+  color: var(--game-text-main);
+}
+.game-btn-gold:hover { background: var(--game-gold-hover); }
+
+.game-btn-blue {
+  background: var(--game-blue);
+  color: var(--game-text-on-dark);
+}
+.game-btn-blue:hover { background: var(--game-blue-hover); }
+
+.game-btn-green {
+  background: var(--game-green);
+  color: var(--game-text-on-dark);
+}
+.game-btn-green:hover { background: var(--game-green-hover); }
+
+.game-btn-orange {
+  background: var(--game-orange);
+  color: var(--game-text-on-dark);
+}
+.game-btn-orange:hover { background: var(--game-orange-hover); }
+
+.game-btn-white {
+  background: var(--game-surface);
+  color: var(--game-text-main);
+}
+.game-btn-white:hover {
+  background: var(--game-surface-warm);
+}
+
+/* 2D 徽章與標籤 (Badges & Pills) */
+.game-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.76rem;
+  font-weight: 800;
+  border: var(--game-outline-sm);
+  border-radius: var(--game-radius-pill);
+  box-shadow: var(--game-shadow-badge);
+  line-height: 1.2;
+}
+
+/* 2D 實體輸入框 */
+.game-input {
+  width: 100%;
+  padding: 0.65rem 1rem;
+  font-family: var(--game-font-stack);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--game-text-main);
+  background: var(--game-surface);
+  border: var(--game-outline);
+  border-radius: var(--game-radius-btn);
+  box-shadow: inset 0 2px 0 rgba(30, 41, 59, 0.08), 0 3px 0 var(--game-border-color);
+  outline: none;
+  transition: var(--game-transition);
+}
+.game-input:focus {
+  background: var(--game-surface-warm);
+  box-shadow: inset 0 2px 0 rgba(30, 41, 59, 0.08), 0 3px 0 var(--game-border-color), 0 0 0 3px var(--game-gold);
+}
+
+/* 2D 高對比表格 (Tables) */
+.game-table-container {
+  border: var(--game-outline);
+  border-radius: var(--game-radius-card);
+  box-shadow: var(--game-shadow-card);
+  overflow: hidden;
+  background: var(--game-surface);
+}
+.game-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-family: var(--game-font-stack);
+}
+.game-table th {
+  background: var(--game-surface-dark);
+  color: var(--game-text-on-dark);
+  font-weight: 800;
+  padding: 0.85rem 1rem;
+  font-size: 0.9rem;
+  border-bottom: var(--game-outline);
+  letter-spacing: 0.02em;
+}
+.game-table td {
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+  color: var(--game-text-main);
+  border-bottom: 1.5px solid var(--game-surface-subtle);
+}
+.game-table tr:last-child td {
+  border-bottom: none;
+}
+.game-table tr:nth-child(even) td {
+  background: var(--game-surface-warm);
+}
+.game-table tr:hover td {
+  background: var(--game-gold-bg);
+}
