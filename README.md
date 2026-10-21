@@ -19,7 +19,7 @@ Project Hub 是對外展示專案定位、版本與下載入口的靜態網站�
 | 分類 | 法寶名號 / 專案名稱 | 版本 | 入口 / 說明頁 |
 |---|---|---|---|
 | **輕靈法寶 (Web SPA)** | **萬里烽火・天罡羅盤**｜電信基地台即時定位 | `線上 v3.2.2` | [撥動羅盤](https://lianghao02.github.io/Cell-Tower-Map-Locator/) |
-| **輕靈法寶 (Web SPA)** | **天機百景・乾坤照影卷**｜現況照片清冊生成器 | `v2.3.2` | [展開圖卷](https://lianghao02.github.io/Photo-Report-Generator/) |
+| **輕靈法寶 (Web SPA)** | **天機百景・乾坤照影卷**｜現況照片清冊生成器 | `v2.4.0` | [展開圖卷](https://lianghao02.github.io/Photo-Report-Generator/) |
 | **輕靈法寶 (Web SPA)** | **九章靈算・金匱天籌錄**｜金融資料 CSV 轉 Excel | `v1.7.1` | [啟算靈石](https://lianghao02.github.io/Financial-Data-Parser/) |
 | **輕靈法寶 (Web SPA)** | **問道四時・太陰太陽時辰曆**｜卡片式行事曆 App | `v1.2.0` | [觀覽時序](https://calendar-family-lianghao02.web.app/) |
 | **輕靈法寶 (Web SPA)** | **文印江湖・大千天機打字傳**｜新國風闖關 | `線上 v2.2.3` | [拔劍修煉](https://lianghao02.github.io/16_Wuxia-Typing-Legend/) ｜ [文印劍訣歷程](wuxia_typing.html) |
@@ -28,8 +28,8 @@ Project Hub 是對外展示專案定位、版本與下載入口的靜態網站�
 | **輕靈法寶 (Web SPA)** | **百草天香・神農玉液煉丹坊**｜手作精油配方管理 | `線上 v1.6.0` | [開爐調香](https://lianghao02.github.io/AromaCraft-Studio/) |
 | **玄鐵神兵 (.NET 8)** | **破妄神目・照妖鑑真神兵錄**｜警務影像轉檔銳化 | `v11.4.0` | [祭出神目](https://github.com/lianghao02/Police-Image-Toolkit) |
 | **玄鐵神兵 (.NET 8)** | **太清滌塵・靈脈疏通歸元訣**｜系統快取清理 | `v6.2.3` | [運轉歸元](https://github.com/lianghao02/System-Optimizer-Tool) |
-| **玄鐵神兵 (.NET 8)** | **裁雲剪雪・玉版符牒工坊**｜PaperSwitch 文件轉檔 | `下載 v4.4.2` | [裁雲印製](https://github.com/lianghao02/PaperSwitch) |
-| **玄鐵神兵 (.NET 8)** | **星宿分疆・乾坤芥子八卦閣**｜桌面分區面板 | `v2.9.4` | [布設結界](https://github.com/lianghao02/DesktopFramesPlus) |
+| **玄鐵神兵 (.NET 8)** | **裁雲剪雪・玉版符牒工坊**｜PaperSwitch 文件轉檔 | `下載 v4.5.0` | [裁雲印製](https://github.com/lianghao02/PaperSwitch) |
+| **玄鐵神兵 (.NET 8)** | **星宿分疆・乾坤芥子八卦閣**｜桌面分區面板 | `v2.11.0` | [布設結界](https://github.com/lianghao02/DesktopFramesPlus) |
 | **通天靈識 (Python)** | **滄海擷珠・雲笈玉牒歸真法**｜Google 相簿整理 | `v1.3.0` | [擷珠歸真](https://github.com/lianghao02/14_Google-Photos-Takeout-Organizer) |
 | **通天靈識 (Python)** | **大衍追風・天眼快篩搜神陣**｜科技鑑識快篩 | `v4.0.1` | [啟動搜神](https://github.com/lianghao02/AG-MONITOR-Smart-Video-Screening) |
 | **通天靈識 (Python)** | **天機偃師・藏經破陣機巧人**｜研習自動化機器人 | `V2.0.1` | [驅策機關](https://github.com/lianghao02/auto-learning-bot) |

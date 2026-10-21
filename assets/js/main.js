@@ -71,7 +71,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#14b8a6",
       "badge": "天機免安裝",
       "badgeClass": "badge-web",
-      "version": "v2.3.2",
+      "version": "v2.4.0",
       "action": "展開圖卷",
       "featured": true
     },
@@ -264,7 +264,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#ef4444",
       "badge": ".NET 8 混元真氣",
       "badgeClass": "badge-native",
-      "version": "v4.4.2",
+      "version": "v4.5.0",
       "action": "裁雲印製",
       "featured": true,
       "versionLabel": "下載"
@@ -286,7 +286,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#3b82f6",
       "badge": ".NET 8 混元真氣",
       "badgeClass": "badge-native",
-      "version": "v2.9.4",
+      "version": "v2.11.0",
       "action": "布設結界",
       "featured": true
     },
