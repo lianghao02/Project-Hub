@@ -113,7 +113,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#10b981",
       "badge": "天機免安裝",
       "badgeClass": "badge-web",
-      "version": "v1.2.0",
+      "version": "v1.3.0",
       "action": "觀覽時序",
       "featured": false
     },
@@ -179,7 +179,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#f59e0b",
       "badge": "天機免安裝",
       "badgeClass": "badge-web",
-      "version": "v1.1.0",
+      "version": "v1.2.0",
       "action": "執掌度支",
       "featured": false
     },
@@ -200,7 +200,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#84cc16",
       "badge": "天機免安裝",
       "badgeClass": "badge-web",
-      "version": "v1.6.0",
+      "version": "v1.6.2",
       "action": "開爐調香",
       "featured": false,
       "versionLabel": "線上"

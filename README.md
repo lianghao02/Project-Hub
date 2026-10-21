@@ -21,11 +21,11 @@ Project Hub 是對外展示專案定位、版本與下載入口的靜態網站�
 | **輕靈法寶 (Web SPA)** | **萬里烽火・天罡羅盤**｜電信基地台即時定位 | `線上 v3.2.2` | [撥動羅盤](https://lianghao02.github.io/Cell-Tower-Map-Locator/) |
 | **輕靈法寶 (Web SPA)** | **天機百景・乾坤照影卷**｜現況照片清冊生成器 | `v2.4.0` | [展開圖卷](https://lianghao02.github.io/Photo-Report-Generator/) |
 | **輕靈法寶 (Web SPA)** | **九章靈算・金匱天籌錄**｜金融資料 CSV 轉 Excel | `v1.8.0` | [啟算靈石](https://lianghao02.github.io/Financial-Data-Parser/) |
-| **輕靈法寶 (Web SPA)** | **問道四時・太陰太陽時辰曆**｜卡片式行事曆 App | `v1.2.0` | [觀覽時序](https://calendar-family-lianghao02.web.app/) |
+| **輕靈法寶 (Web SPA)** | **問道四時・太陰太陽時辰曆**｜卡片式行事曆 App | `v1.3.0` | [觀覽時序](https://calendar-family-lianghao02.web.app/) |
 | **輕靈法寶 (Web SPA)** | **文印江湖・大千天機打字傳**｜新國風闖關 | `線上 v2.2.3` | [拔劍修煉](https://lianghao02.github.io/16_Wuxia-Typing-Legend/) ｜ [文印劍訣歷程](wuxia_typing.html) |
 | **輕靈法寶 (Web SPA)** | **尋龍探脈・玄天鏈流照妖鑑**｜鏈上金流查核 | `v1.6.0` | [探察鏈流](https://github.com/lianghao02/chainflow-inspector) |
-| **輕靈法寶 (Web SPA)** | **乾坤節度・靈石月俸度支司**｜固定支出管家 | `v1.1.0` | [執掌度支](https://subscription-ledger-f77fd.web.app) |
-| **輕靈法寶 (Web SPA)** | **百草天香・神農玉液煉丹坊**｜手作精油配方管理 | `線上 v1.6.0` | [開爐調香](https://lianghao02.github.io/AromaCraft-Studio/) |
+| **輕靈法寶 (Web SPA)** | **乾坤節度・靈石月俸度支司**｜固定支出管家 | `v1.2.0` | [執掌度支](https://subscription-ledger-f77fd.web.app) |
+| **輕靈法寶 (Web SPA)** | **百草天香・神農玉液煉丹坊**｜手作精油配方管理 | `線上 v1.6.2` | [開爐調香](https://lianghao02.github.io/AromaCraft-Studio/) |
 | **玄鐵神兵 (.NET 8)** | **破妄神目・照妖鑑真神兵錄**｜警務影像轉檔銳化 | `v11.4.0` | [祭出神目](https://github.com/lianghao02/Police-Image-Toolkit) |
 | **玄鐵神兵 (.NET 8)** | **太清滌塵・靈脈疏通歸元訣**｜系統快取清理 | `v6.2.3` | [運轉歸元](https://github.com/lianghao02/System-Optimizer-Tool) |
 | **玄鐵神兵 (.NET 8)** | **裁雲剪雪・玉版符牒工坊**｜PaperSwitch 文件轉檔 | `下載 v4.5.0` | [裁雲印製](https://github.com/lianghao02/PaperSwitch) |
