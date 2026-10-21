@@ -92,7 +92,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#d97706",
       "badge": "天機免安裝",
       "badgeClass": "badge-web",
-      "version": "v1.7.1",
+      "version": "v1.8.0",
       "action": "啟算靈石",
       "featured": false
     },
