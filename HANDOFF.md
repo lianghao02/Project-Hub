@@ -1,5 +1,8 @@
 # HANDOFF
 
+## 2026-10-22 同步發布版本（Claude）
+- 依發布檢查表 6a：基地台定位更新為 v3.2.3、照片清冊更新為 v2.4.1（`data/projects.json` 與 `sync_projects.py --mode fallback` 產生的 `assets/js/main.js`），`validate_projects.py` 16 項通過；提交 7a35ce8，Pages 工作流程成功，正式站資料已顯示新版本。
+
 ## 核心元資料 (Metadata)
 - **Repository**：lianghao02/Project-Hub
 - **Branch**：main
