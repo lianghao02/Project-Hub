@@ -49,7 +49,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#0ea5e9",
       "badge": "天機免安裝",
       "badgeClass": "badge-web",
-      "version": "v3.2.2",
+      "version": "v3.2.3",
       "action": "撥動羅盤",
       "featured": true,
       "versionLabel": "線上"
@@ -71,7 +71,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#14b8a6",
       "badge": "天機免安裝",
       "badgeClass": "badge-web",
-      "version": "v2.4.0",
+      "version": "v2.4.1",
       "action": "展開圖卷",
       "featured": true
     },
