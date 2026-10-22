@@ -23,7 +23,7 @@ Project Hub 是對外展示專案定位、版本與下載入口的靜態網站�
 | 網頁（免安裝） | **金融資料轉檔機**｜轉換金融資料並保留前導零不被吞掉 | `v1.8.1` | [開始轉檔](https://lianghao02.github.io/Financial-Data-Parser/) |
 | 網頁（免安裝） | **卡片行事曆手帳**｜卡片式行事曆，配色淡雅，支援離線使用與 Google Apps Script 雲端同步 | `v1.3.1` | [打開手帳](https://calendar-family-lianghao02.web.app/) |
 | 網頁（免安裝） | **武俠打字傳**｜專為臺灣學童設計的國風打字闖關遊戲：六章 30 關、刀槍劍三流派、五行屬性，收錄教育部小字典 4,311 字 | `線上 v2.2.3` | [開始闖關](https://lianghao02.github.io/16_Wuxia-Typing-Legend/) |
-| 網頁（免安裝） | **鏈上金流追蹤站**｜查看公開鏈上資料的資金流向，涵蓋 Polymarket 與多鏈金流，以圖譜呈現關聯，協助取證與查核 | `v1.6.0` | [開始追蹤](https://github.com/lianghao02/chainflow-inspector) |
+| 網頁（免安裝） | **鏈上金流追蹤站**｜查看公開鏈上資料的資金流向，涵蓋 Polymarket 與多鏈金流，以圖譜呈現關聯，協助取證與查核 | `v1.6.1` | [開始追蹤](https://github.com/lianghao02/chainflow-inspector) |
 | 網頁（免安裝） | **固定支出管家**｜管理每月固定支出，明細一目了然 | `v1.2.1` | [查看帳本](https://subscription-ledger-f77fd.web.app) |
 | 網頁（免安裝） | **精油調配工坊**｜精油配方調製與成本利潤雙模式試算，手機採雙欄工作區，可透過 Google Sheets 家庭共用 | `線上 v1.6.5` | [開始調配](https://lianghao02.github.io/AromaCraft-Studio/) |
 | Windows 桌面 | **影像鑑識放大鏡**｜Windows 原生 C# .NET 8 影像鑑識工具，支援 iPhone 4K 60fps 與 HEIC 高速並行轉檔，細節銳化清楚 | `v11.4.0` | [開啟放大鏡](https://github.com/lianghao02/Police-Image-Toolkit) |

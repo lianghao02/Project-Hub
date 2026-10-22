@@ -158,7 +158,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#e11d48",
       "badge": "免安裝網頁",
       "badgeClass": "badge-web",
-      "version": "v1.6.0",
+      "version": "v1.6.1",
       "action": "開始追蹤",
       "featured": true
     },
