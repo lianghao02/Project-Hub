@@ -152,7 +152,7 @@ const FALLBACK_PROJECTS = [
         "鏈流診斷"
       ],
       "url": "https://github.com/lianghao02/chainflow-inspector",
-      "image": "images/banner_chainflow-inspector.png",
+      "image": "images/banner_chainflow-inspector.webp",
       "alt": "尋龍探脈・玄天鏈流照妖鑑",
       "icon": "fa-link",
       "iconColor": "#e11d48",
@@ -173,7 +173,7 @@ const FALLBACK_PROJECTS = [
         "聚沙成塔"
       ],
       "url": "https://subscription-ledger-f77fd.web.app",
-      "image": "images/banner_Subscription-Manager.png",
+      "image": "images/banner_Subscription-Manager.webp",
       "alt": "乾坤節度・靈石月俸度支司",
       "icon": "fa-coins",
       "iconColor": "#f59e0b",
@@ -194,7 +194,7 @@ const FALLBACK_PROJECTS = [
         "手機雙欄檯"
       ],
       "url": "https://lianghao02.github.io/AromaCraft-Studio/",
-      "image": "images/banner_AromaCraft-Studio.png",
+      "image": "images/banner_AromaCraft-Studio.webp",
       "alt": "百草天香・神農玉液煉丹坊",
       "icon": "fa-spa",
       "iconColor": "#84cc16",
@@ -258,7 +258,7 @@ const FALLBACK_PROJECTS = [
         "玉版裝訂"
       ],
       "url": "https://github.com/lianghao02/PaperSwitch",
-      "image": "images/banner_PaperSwitch.png",
+      "image": "images/banner_PaperSwitch.webp",
       "alt": "裁雲剪雪・玉版符牒工坊",
       "icon": "fa-book-bookmark",
       "iconColor": "#ef4444",
@@ -301,7 +301,7 @@ const FALLBACK_PROJECTS = [
         "時光玉牒歸檔"
       ],
       "url": "https://github.com/lianghao02/14_Google-Photos-Takeout-Organizer",
-      "image": "images/banner_Google-Photos-Takeout-Organizer.png",
+      "image": "images/banner_Google-Photos-Takeout-Organizer.webp",
       "alt": "滄海擷珠・雲笈玉牒歸真法",
       "icon": "fa-cloud-arrow-down",
       "iconColor": "#38bdf8",
