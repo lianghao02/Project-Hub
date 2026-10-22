@@ -3,50 +3,29 @@
 ## 核心元資料 (Metadata)
 - **Repository**：lianghao02/Project-Hub
 - **Branch**：main
-- **Commit SHA**：8100419277a2613935300c4e929252c2be3a9338（本輪更新前基準）
+- **Commit SHA**：4d872a87cec25382eea5387bb61e9e35eb54c3a2（本輪提交前基準）
 - **Skill Version**：v1.0.0
-- **Task Type**：RELEASE / HANDOFF
+- **Task Type**：IMPROVE / HANDOFF
 - **Local Path Hint**：13_Project-Hub
 
 ## 目前狀態
-2026-10-22：使用者已授權提交發布；七個產品的正式 Release 已建立後才同步展示版本。本提交推送後觸發 Pages，最終線上結果見控制中心 docs/audit-release-20261022.md。
+橫幅圖已轉 WebP 並推送上線。本輪「工具村」Q 版改版已在本機提交，**尚未推送、尚未部署**。
 
-## 本輪目標
-同步已發布產品版本，保留既有展示內容。
+## 本輪已完成
+- 名稱與文案：移除武俠風，16 張卡片改為「遊戲化工具名＋白話功能說明」（`data/projects.json`，已用 `sync_projects.py --mode fallback` 同步備援）。分類改為「網頁關卡／桌面基地／智慧實驗室」。
+- 視覺：封面由水墨橫幅圖改為 CSS 道具圖塊（`index.html` 的 `.card-banner.is-tile`，`main.js` 的 `USE_ARTWORK` 開關；設為 true 可改回使用 `images/`）。
+- 排版：手機分類頁籤改為橫向捲動且不擠壓、觸控高度 40px；搜尋提示縮短；README 總覽表改由 JSON 重新產生。
+- 驗證：`validate_projects.py` 16 筆通過；本機瀏覽器桌機與 375px 手機寬度檢查、分類篩選正常、無橫向溢出。
 
-## 基準與已確認事實 (Baseline & Confirmed Facts)
-起始 main／8100419277a2613935300c4e929252c2be3a9338、Clean；線上版本檢查 0 矛盾。前輪 WebP 成果繼承。
+## 刻意保留
+- `武俠打字傳` 是遊戲本身的名稱，不改；`wuxia_typing.html` 內為遊戲內容，未動。
+- `images/` 的 WebP 橫幅暫時不再被頁面使用，保留供日後換成新的 Q 版插畫。
+- 第 11 張卡片（DesktopFramesPlus，專案 19）僅改展示站文案，未動 19 的專案本身。
 
-## 已完成 (Completed)
-02 v3.2.4、08 v1.8.1、11 v1.3.1、17 v1.2.1、18 v1.6.5、14 v1.3.1、12 v1.1.1；修改 JSON 後以 sync_projects.py --mode fallback 同步備援並驗證。
-
-## 異動檔案 (Changed Files)
-data/projects.json、assets/js/main.js、HANDOFF.md。
-
-## 刻意未修改 (Do Not Do / Deliberately Omitted)
-只改七筆 version；其他欄位、圖片、CSS 與 19 展示資料均不變。未新增私人來源或資料。
-
-## 尚未完成 (Remaining Work)
-- **P1 (阻斷/必須)**：無已知阻斷。
-- **P2 (重要/當次)**：推送後核對 Pages 與線上 JSON；結果統一見中央發布報告。
-- **P3 (改善建議/暫緩)**：其餘介面維持現況。
-
-## 驗證結果 (Validation)
-### 已執行測試與結果
-16 筆資料驗證通過；七筆版本以外欄位不變，19 物件逐值相同。
-### 尚未驗證項目
-本提交後的線上結果由中央發布報告記錄。
-### 已知風險 (Known Risks)
-GitHub Pages 部署有佇列與 CDN 更新時間。
+## 尚未完成
+- 推送與 Pages 部署需使用者授權；推送後核對正式站。
+- 「精選」徽章目前 11/16 張都有，失去區分意義，是否縮減待使用者決定。
+- 若要真正的 Q 版插畫封面，需另行製作 16 張圖。
 
 ## Git 狀態
-- Commit：本輪三檔獨立提交，SHA 以 Git 為準。
-- Push：使用者已授權，本提交後核對。
-- Working Tree：提交後確認 Clean。
-- Branch：main。
-
-## 下一步建議動作 (Next Recommended Action)
-核對中央實際部署結果後停止擴大修改。
-
-## 發布狀態 (Release Status)
-七個產品 Release 已建立；展示站推送後核對正式站。
+- Working Tree：提交後 Clean。Branch：main。

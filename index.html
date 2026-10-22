@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="LiangHao 的精選神兵法寶靈鑑：輕靈網頁法寶、Windows 極速玄鐵神兵與 AI 靈識鑑識大陣。">
+  <meta name="description" content="LiangHao 的工具村：免安裝網頁工具、Windows 桌面工具與 AI 輔助工具，資料以本機處理為優先。">
   <meta name="author" content="LiangHao">
-  <title>LiangHao's Project Hub | 武道天機・神兵法寶靈鑑</title>
+  <title>LiangHao's Project Hub | 工具村</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/game-2d-tokens.css">
@@ -320,7 +320,7 @@
       white-space: nowrap;
     }
 
-    /* --- Card Grid & 2D Chunky Cards (緊湊高密度神兵法寶靈卡) --- */
+    /* --- Card Grid & 2D Chunky Cards (緊湊高密度工具卡) --- */
     .grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -374,10 +374,10 @@
       box-shadow: var(--game-shadow-badge);
     }
 
-    /* Card Banner (緊湊比例 16:8.2，讓首屏容納更多內容) */
+    /* Card Banner：Q 版遊戲道具圖塊（色塊＋點陣＋粗描邊大圖示），比例壓低讓首屏容納更多卡片 */
     .card-banner {
       position: relative;
-      aspect-ratio: 16 / 8.2;
+      aspect-ratio: 16 / 5.6;
       background: #E2E8F0;
       overflow: hidden;
       border-bottom: var(--game-outline);
@@ -387,29 +387,34 @@
       height: 100%;
       object-fit: cover;
       display: block;
-      transition: transform 0.35s ease;
     }
-    .card:hover .card-banner img {
-      transform: scale(1.04);
+    .card-banner.is-tile {
+      display: grid;
+      place-items: center;
+      background-color: var(--tile-bg);
+      background-image:
+        radial-gradient(rgba(30, 41, 59, 0.13) 1.6px, transparent 1.6px),
+        radial-gradient(circle at 12% 120%, rgba(255, 255, 255, 0.65) 0 22%, transparent 23%),
+        radial-gradient(circle at 92% -20%, rgba(255, 255, 255, 0.55) 0 26%, transparent 27%);
+      background-size: 14px 14px, auto, auto;
     }
-
-    /* 專案型態標記 (Target Type Pill) */
-    .target-pill {
-      position: absolute;
-      top: 0.6rem;
-      right: 0.6rem;
-      z-index: 2;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      padding: 0.18rem 0.6rem;
-      background: var(--game-surface-dark);
-      color: #FFFFFF;
-      border: var(--game-outline-sm);
-      border-radius: var(--game-radius-pill);
-      font-size: 0.7rem;
-      font-weight: 800;
-      box-shadow: var(--game-shadow-badge);
+    .tile-emblem {
+      width: clamp(52px, 17%, 72px);
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      background: #FFFFFF;
+      color: var(--tile-ink);
+      border: var(--game-outline);
+      border-radius: 18px;
+      box-shadow: 0 5px 0 var(--game-border-color);
+      font-size: clamp(1.4rem, 3.2vw, 2rem);
+      transform: rotate(-4deg);
+      transition: var(--game-transition);
+    }
+    .card:hover .tile-emblem {
+      transform: rotate(3deg) translateY(-3px) scale(1.06);
+      box-shadow: 0 8px 0 var(--game-border-color);
     }
 
     /* Card Body (收斂無謂留白) */
@@ -711,6 +716,10 @@
     @media (max-width: 768px) {
       .controls-wrapper { flex-direction: column; align-items: stretch; }
       .filter-tabs { width: 100%; overflow-x: auto; flex-wrap: nowrap; }
+      .filter-tabs { scrollbar-width: none; }
+      .filter-tabs::-webkit-scrollbar { display: none; }
+      .tab-btn { flex-shrink: 0; white-space: nowrap; min-height: 40px; }
+      .action-btn { min-height: 40px; }
       .search-box { max-width: 100%; }
       .footer-inner { grid-template-columns: 1fr; gap: 1.25rem; }
       .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
@@ -732,15 +741,15 @@
       <div class="brand-group">
         <a href="#" class="brand" aria-label="回到 LiangHao Project Hub 首頁">
           <span class="brand-icon" aria-hidden="true"><i class="fa-solid fa-gamepad"></i></span>
-          <span class="brand-title">武道天機・<span>神兵法寶靈鑑</span></span>
+          <span class="brand-title">LiangHao <span>工具村</span></span>
         </a>
-        <span class="brand-subtitle">輕靈網頁法寶・Windows 玄鐵神兵・AI 靈識破妄陣</span>
+        <span class="brand-subtitle">免安裝網頁・Windows 桌面・AI 智慧工具</span>
       </div>
       <div class="header-right">
         <div class="hero-stats-line" aria-label="專案亮點統計">
-          <span class="stat-pill"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> <strong id="total-projects-stat">16+</strong> 件法寶</span>
-          <span class="stat-pill"><i class="fa-solid fa-cubes" aria-hidden="true"></i> <strong>3</strong> 大境界</span>
-          <span class="stat-pill"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> <strong>100%</strong> 本機守護</span>
+          <span class="stat-pill"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> <strong id="total-projects-stat">16+</strong> 個工具</span>
+          <span class="stat-pill"><i class="fa-solid fa-cubes" aria-hidden="true"></i> <strong>3</strong> 大分區</span>
+          <span class="stat-pill"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> 本機處理優先</span>
         </div>
         <a href="https://github.com/lianghao02" target="_blank" rel="noopener noreferrer" class="github-btn" aria-label="前往 LiangHao 的 GitHub 個人主頁">
           <i class="fa-brands fa-github" aria-hidden="true"></i>
@@ -754,22 +763,22 @@
   <div class="controls-wrapper" role="region" aria-label="作品篩選與搜尋工具列">
     <div class="filter-tabs" role="tablist" aria-label="專案領域分類">
       <button class="tab-btn active" role="tab" aria-selected="true" data-category="all">
-        全部法寶 <span class="tab-count" id="count-all">0</span>
+        全部工具 <span class="tab-count" id="count-all">0</span>
       </button>
       <button class="tab-btn" role="tab" aria-selected="false" data-category="web">
-        輕靈法寶 <span class="tab-count" id="count-web">0</span>
+        網頁 <span class="tab-count" id="count-web">0</span>
       </button>
       <button class="tab-btn" role="tab" aria-selected="false" data-category="native">
-        玄鐵神兵 <span class="tab-count" id="count-native">0</span>
+        Windows 桌面 <span class="tab-count" id="count-native">0</span>
       </button>
       <button class="tab-btn" role="tab" aria-selected="false" data-category="ai">
-        通天靈識 <span class="tab-count" id="count-ai">0</span>
+        AI 智慧 <span class="tab-count" id="count-ai">0</span>
       </button>
     </div>
 
     <div class="search-box">
       <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
-      <input type="text" id="project-search" class="search-input" placeholder="按 / 搜尋法寶或點擊卡片標籤過濾 (Esc 重置)..." aria-label="搜尋專案">
+      <input type="text" id="project-search" class="search-input" placeholder="搜尋工具或標籤（按 / 聚焦）" aria-label="搜尋專案">
       <button id="search-clear" class="search-clear" aria-label="清除搜尋內容"><i class="fa-solid fa-xmark"></i></button>
     </div>
   </div>
@@ -787,11 +796,11 @@
         <p class="footer-brand-desc">專注於現代前端輕量化架構、Windows 高效原生工具以及 AI 鑑識與公務流程自動化解決方案。堅持無侵入式、資料本機安全與精簡實用導向。</p>
       </div>
       <div>
-        <div class="footer-col-title">法寶類別</div>
+        <div class="footer-col-title">工具分區</div>
         <ul class="footer-links">
-          <li><a href="#projects" class="footer-link" onclick="window.filterByCategory('web')">輕靈法寶 (Web SPA)</a></li>
-          <li><a href="#projects" class="footer-link" onclick="window.filterByCategory('native')">玄鐵神兵 (Windows .NET 8)</a></li>
-          <li><a href="#projects" class="footer-link" onclick="window.filterByCategory('ai')">通天靈識 (AI 鑑識自動化)</a></li>
+          <li><a href="#projects" class="footer-link" onclick="window.filterByCategory('web')">網頁關卡（免安裝）</a></li>
+          <li><a href="#projects" class="footer-link" onclick="window.filterByCategory('native')">桌面基地（Windows）</a></li>
+          <li><a href="#projects" class="footer-link" onclick="window.filterByCategory('ai')">智慧實驗室（AI 輔助）</a></li>
         </ul>
       </div>
       <div>
@@ -804,7 +813,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <div>© <span id="year"></span> LiangHao. All rights reserved. 目前共展示 <span id="project-count">0</span> 件神兵法寶。</div>
+      <div>© <span id="year"></span> LiangHao. All rights reserved. 目前共展示 <span id="project-count">0</span> 個工具。</div>
       <button class="back-to-top" onclick="window.scrollTo({top:0, behavior:'smooth'})" aria-label="返回頁面頂端">
         <i class="fa-solid fa-arrow-up"></i> 返回頂端
       </button>

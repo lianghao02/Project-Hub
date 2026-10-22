@@ -1,29 +1,29 @@
 /**
- * LiangHao Project Hub - 莫蘭迪風格商業作品展示引擎
+ * LiangHao Project Hub - Q 版 2D 遊戲風格作品展示引擎
  * 支援即時搜尋過濾、分類切換、精選標記與流暢互動
  */
 
+// 封面模式：false＝CSS 圖塊（預設），true＝使用 data 內的 image 插畫
+const USE_ARTWORK = false;
+
 const categories = {
   web: {
-    icon: "fa-fan",
-    color: "#4a7c59",
-    title: "天機輕靈・免安裝即開法寶",
-    description: "點擊即可於乾坤鏡中運轉，丹田本機安全、不染俗塵。",
-    targetLabel: "輕靈法寶 🌐"
+    icon: "fa-globe",
+    color: "#047857",
+    title: "網頁關卡・點開就能用",
+    description: "免安裝，打開網頁就能使用，資料留在你的裝置。"
   },
   native: {
-    icon: "fa-khanda",
-    color: "#6b5b82",
-    title: "混元真氣・Windows 極速神兵",
-    description: "以 Windows 混元真氣打造的高效原生神兵，疾速凌厲。",
-    targetLabel: "玄鐵神兵 ⚡"
+    icon: "fa-computer",
+    color: "#6D28D9",
+    title: "桌面基地・Windows 本機工具",
+    description: "Windows 原生桌面工具，執行快速，檔案不離開電腦。"
   },
   ai: {
-    icon: "fa-yin-yang",
-    color: "#41678f",
-    title: "通天靈識・AI 鑑識破妄陣",
-    description: "凝練 AI 神識洞察秋毫，影像鑑識與機關傀儡自動化。",
-    targetLabel: "通天靈識 🧠"
+    icon: "fa-robot",
+    color: "#1D4ED8",
+    title: "智慧實驗室・AI 輔助工具",
+    description: "影像、影音與學習流程的 AI 輔助自動化，以離線優先設計。"
   }
 };
 
@@ -33,345 +33,345 @@ const categories = {
  */
 const FALLBACK_PROJECTS = [
     {
-      "name": "萬里烽火・天罡羅盤｜基地台即時定位",
+      "name": "基地台定位雷達",
       "category": "web",
-      "description": "縱覽九州烽火靈脈，定四海修士傳音行蹤。調遣萬里電信信標，於彈指間洞燭陣法虛實、時序軌跡與現地戰術導航。",
+      "description": "在地圖上快速定位基地台，依時間順序畫出移動軌跡，並支援現地導航。免安裝即開，資料在本機處理。",
       "tags": [
         "HTML5",
         "Leaflet.js",
-        "烽火靈脈導航",
-        "時序軌跡密法"
+        "即時定位導航",
+        "時序軌跡"
       ],
       "url": "https://lianghao02.github.io/Cell-Tower-Map-Locator/",
       "image": "images/banner_Cell-Tower-Map-Locator.webp",
-      "alt": "萬里烽火・天罡羅盤",
+      "alt": "基地台定位雷達封面",
       "icon": "fa-compass",
       "iconColor": "#0ea5e9",
-      "badge": "天機免安裝",
+      "badge": "免安裝網頁",
       "badgeClass": "badge-web",
       "version": "v3.2.4",
-      "action": "撥動羅盤",
+      "action": "開啟雷達",
       "featured": true,
       "versionLabel": "線上"
     },
     {
-      "name": "天機百景・乾坤照影卷｜照片清冊生成器",
+      "name": "照片清冊工坊",
       "category": "web",
-      "description": "凝神納百景，吐納間化萬象為乾坤玉冊。純前端靈力運轉，一念鑄成標準 OpenXML docx 道牒，不著寸毫雜念，徹底零巨集警示。",
+      "description": "把現場照片整理成標準 docx 照片清冊。純前端運作、不含巨集，另有 Tauri 桌面版。",
       "tags": [
         "純前端 SPA",
-        "docx.js 符印",
-        "Tauri 乾坤版",
-        "道牒零巨集"
+        "docx.js",
+        "Tauri 桌面版",
+        "零巨集"
       ],
       "url": "https://lianghao02.github.io/Photo-Report-Generator/",
       "image": "images/banner_Photo-Report-Generator.webp",
-      "alt": "天機百景・乾坤照影卷",
+      "alt": "照片清冊工坊封面",
       "icon": "fa-scroll",
       "iconColor": "#14b8a6",
-      "badge": "天機免安裝",
+      "badge": "免安裝網頁",
       "badgeClass": "badge-web",
       "version": "v2.4.1",
-      "action": "展開圖卷",
+      "action": "開啟工坊",
       "featured": true
     },
     {
-      "name": "九章靈算・金匱天籌錄｜金融資料轉檔",
+      "name": "金融資料轉檔機",
       "category": "web",
-      "description": "撥弄天平算籌，厘清宗門萬千靈石進出。前導靈紋分毫不損，密帳穿行於本機丹田，滴水不漏、外魔不侵，零資料外流風險。",
+      "description": "轉換金融資料並保留前導零不被吞掉。資料只在本機處理，沒有外流風險。",
       "tags": [
         "JavaScript",
-        "SheetJS 算籌",
-        "前導靈紋護持",
-        "密帳金匱"
+        "SheetJS",
+        "前導零保護",
+        "本機處理"
       ],
       "url": "https://lianghao02.github.io/Financial-Data-Parser/",
       "image": "images/banner_Financial-Data-Parser.webp",
-      "alt": "九章靈算・金匱天籌錄",
+      "alt": "金融資料轉檔機封面",
       "icon": "fa-calculator",
       "iconColor": "#d97706",
-      "badge": "天機免安裝",
+      "badge": "免安裝網頁",
       "badgeClass": "badge-web",
       "version": "v1.8.1",
-      "action": "啟算靈石",
+      "action": "開始轉檔",
       "featured": false
     },
     {
-      "name": "問道四時・太陰太陽時辰曆｜卡片式行事曆",
+      "name": "卡片行事曆手帳",
       "category": "web",
-      "description": "一葉知秋、四時有序。靜觀日月盈昃與修士課業，以莫蘭迪淡雅青墨繪製時辰簡牒，支援離線參悟與 GAS 雲端天道同步。",
+      "description": "卡片式行事曆，配色淡雅，支援離線使用與 Google Apps Script 雲端同步。",
       "tags": [
         "ES2020 JS",
-        "莫蘭迪道韻",
-        "時序青簡",
-        "GAS 雲端符契"
+        "離線可用",
+        "卡片式介面",
+        "GAS 雲端同步"
       ],
       "url": "https://calendar-family-lianghao02.web.app/",
       "image": "images/banner_Calendar-Card-App.webp",
-      "alt": "問道四時・太陰太陽時辰曆",
+      "alt": "卡片行事曆手帳封面",
       "icon": "fa-calendar-check",
       "iconColor": "#10b981",
-      "badge": "天機免安裝",
+      "badge": "免安裝網頁",
       "badgeClass": "badge-web",
       "version": "v1.3.1",
-      "action": "觀覽時序",
+      "action": "打開手帳",
       "featured": false
     },
     {
-      "name": "文印江湖・大千天機打字傳｜國風闖關",
+      "name": "武俠打字傳",
       "category": "web",
-      "description": "專為臺灣學童與修士打造的新國風水墨打字闖關遊戲。收錄文印江湖六章 30 關、刀槍劍三流派、五行屬性運功化解與教育部小字典 4,311 字。",
+      "description": "專為臺灣學童設計的國風打字闖關遊戲：六章 30 關、刀槍劍三流派、五行屬性，收錄教育部小字典 4,311 字。",
       "tags": [
         "HTML5 Canvas",
-        "文印江湖 30 關",
+        "六章 30 關",
         "刀槍劍三流派",
-        "大千注音免選字"
+        "注音免選字"
       ],
       "url": "https://lianghao02.github.io/16_Wuxia-Typing-Legend/",
       "image": "images/banner_Wuxia-Typing-Legend.webp",
-      "alt": "文印江湖・大千天機打字傳",
+      "alt": "武俠打字傳封面",
       "icon": "fa-feather-pointed",
       "iconColor": "#b45309",
-      "badge": "天機免安裝",
+      "badge": "免安裝網頁",
       "badgeClass": "badge-web",
       "version": "v2.2.3",
-      "action": "拔劍修煉",
+      "action": "開始闖關",
       "guideUrl": "wuxia_typing.html",
-      "guideLabel": "文印劍訣歷程",
+      "guideLabel": "玩法與開發歷程",
       "featured": true,
       "versionLabel": "線上"
     },
     {
-      "name": "尋龍探脈・玄天鏈流照妖鑑｜鏈上金流查核",
+      "name": "鏈上金流追蹤站",
       "category": "web",
-      "description": "循天道公開靈脈探查金銀流水，撥開重重迷霧卦象。監察 Polymarket 與多鏈金流交織脈絡，圖譜拓撲取證，讓諸般詭計機鋒現出本相。",
+      "description": "查看公開鏈上資料的資金流向，涵蓋 Polymarket 與多鏈金流，以圖譜呈現關聯，協助取證與查核。",
       "tags": [
-        "區塊鏈拓撲",
-        "金流取證法寶",
-        "公開天道靈脈",
+        "區塊鏈圖譜",
+        "金流取證",
+        "公開鏈上資料",
         "鏈流診斷"
       ],
       "url": "https://github.com/lianghao02/chainflow-inspector",
       "image": "images/banner_chainflow-inspector.webp",
-      "alt": "尋龍探脈・玄天鏈流照妖鑑",
+      "alt": "鏈上金流追蹤站封面",
       "icon": "fa-link",
       "iconColor": "#e11d48",
-      "badge": "天機探脈",
+      "badge": "免安裝網頁",
       "badgeClass": "badge-web",
       "version": "v1.6.0",
-      "action": "探察鏈流",
+      "action": "開始追蹤",
       "featured": true
     },
     {
-      "name": "乾坤節度・靈石月俸度支司｜固定支出管家",
+      "name": "固定支出管家",
       "category": "web",
-      "description": "凡人修真皆需精打細算，度支司理每月靈石俸祿與宗門供奉。明細一目了然，防微杜漸，聚沙成塔固本培元，原生網頁與 Firebase 雙向同步。",
+      "description": "管理每月固定支出，明細一目了然。原生網頁搭配 Firebase 雙向同步。",
       "tags": [
         "原生 Web",
         "Firebase 同步",
-        "月俸度支靈鑑",
-        "聚沙成塔"
+        "月支出明細",
+        "訂閱管理"
       ],
       "url": "https://subscription-ledger-f77fd.web.app",
       "image": "images/banner_Subscription-Manager.webp",
-      "alt": "乾坤節度・靈石月俸度支司",
+      "alt": "固定支出管家封面",
       "icon": "fa-coins",
       "iconColor": "#f59e0b",
-      "badge": "天機免安裝",
+      "badge": "免安裝網頁",
       "badgeClass": "badge-web",
       "version": "v1.2.1",
-      "action": "執掌度支",
+      "action": "查看帳本",
       "featured": false
     },
     {
-      "name": "百草天香・神農玉液煉丹坊｜精油配方管理",
+      "name": "精油調配工坊",
       "category": "web",
-      "description": "探神農百草奧秘，凝天地精華為滴滴天香玉液。配方調製與成本利潤雙模式推演，手機玉案雙欄工作檯，Google Sheets 八方靈簿家庭共賞。",
+      "description": "精油配方調製與成本利潤雙模式試算，手機採雙欄工作區，可透過 Google Sheets 家庭共用。",
       "tags": [
         "GAS Web App",
-        "Google Sheets 靈簿",
-        "百草丹方推演",
-        "手機雙欄檯"
+        "Google Sheets",
+        "配方試算",
+        "手機雙欄"
       ],
       "url": "https://lianghao02.github.io/AromaCraft-Studio/",
       "image": "images/banner_AromaCraft-Studio.webp",
-      "alt": "百草天香・神農玉液煉丹坊",
+      "alt": "精油調配工坊封面",
       "icon": "fa-spa",
       "iconColor": "#84cc16",
-      "badge": "天機免安裝",
+      "badge": "免安裝網頁",
       "badgeClass": "badge-web",
       "version": "v1.6.5",
-      "action": "開爐調香",
+      "action": "開始調配",
       "featured": false,
       "versionLabel": "線上"
     },
     {
-      "name": "破妄神目・照妖鑑真神兵錄｜影像銳化鑑識",
+      "name": "影像鑑識放大鏡",
       "category": "native",
-      "description": "Windows 原生 C# .NET 8 鑑真法眼系統，灌注混元真氣破除迷瘴。iPhone 4K 60fps 與 HEIC 高速並行轉檔，重現纖毫秋毫，誅邪顯形如白晝。",
+      "description": "Windows 原生 C# .NET 8 影像鑑識工具，支援 iPhone 4K 60fps 與 HEIC 高速並行轉檔，細節銳化清楚。",
       "tags": [
         "C# 12 (.NET 8)",
-        "WPF 原生心法",
-        "4K 鑑真破妄",
-        "混元多核並行"
+        "WPF",
+        "4K 銳化",
+        "多核並行"
       ],
       "url": "https://github.com/lianghao02/Police-Image-Toolkit",
       "image": "images/banner_Police-Image-Toolkit.webp",
-      "alt": "破妄神目・照妖鑑真神兵錄",
+      "alt": "影像鑑識放大鏡封面",
       "icon": "fa-eye",
       "iconColor": "#6366f1",
-      "badge": ".NET 8 混元真氣",
+      "badge": "Windows 桌面",
       "badgeClass": "badge-native",
       "version": "v11.4.0",
-      "action": "祭出神目",
+      "action": "開啟放大鏡",
       "featured": true
     },
     {
-      "name": "太清滌塵・靈脈疏通歸元訣｜系統快取清理",
+      "name": "系統清理小幫手",
       "category": "native",
-      "description": "三十六天靈脈常壅，運轉清心訣一指化解雜氣。300 KB 單符毫芒秒發，Win32 待命快取瞬間釋放，排除雜念心魔，使靈台空明、疾速如風。",
+      "description": "300 KB 單檔小工具，秒開即用，一鍵釋放 Win32 待命快取。",
       "tags": [
         "C# 12 (.NET 8)",
-        "300KB 單符秒發",
-        "Win32 靈脈疏通",
-        "歸元無濁"
+        "300KB 單檔",
+        "Win32 快取釋放",
+        "秒開"
       ],
       "url": "https://github.com/lianghao02/System-Optimizer-Tool",
       "image": "images/banner_System-Optimizer-Tool.webp",
-      "alt": "太清滌塵・靈脈疏通歸元訣",
+      "alt": "系統清理小幫手封面",
       "icon": "fa-wind",
       "iconColor": "#eab308",
-      "badge": ".NET 8 混元真氣",
+      "badge": "Windows 桌面",
       "badgeClass": "badge-native",
       "version": "v6.2.3",
-      "action": "運轉歸元",
+      "action": "一鍵清理",
       "featured": false
     },
     {
-      "name": "裁雲剪雪・玉版符牒工坊｜文件轉 PDF",
+      "name": "PDF 印刷所",
       "category": "native",
-      "description": "裁雲為紙、揉墨成經。通曉天下經卷尺寸與折疊造化，WinRT 縮圖與 STA 隔離轉檔無損裝訂，諸般典籍轉瞬成冊，手帳質感古風悠遠。",
+      "description": "掌握各式文件尺寸與排版，以 WinRT 縮圖與 STA 隔離完成轉檔，快速把文件合成 PDF。",
       "tags": [
         "C# 12 (.NET 8)",
-        "WinRT 靈鑑縮圖",
-        "STA 隔絕法印",
-        "玉版裝訂"
+        "WinRT 縮圖",
+        "STA 隔離",
+        "文件轉 PDF"
       ],
       "url": "https://github.com/lianghao02/PaperSwitch",
       "image": "images/banner_PaperSwitch.webp",
-      "alt": "裁雲剪雪・玉版符牒工坊",
+      "alt": "PDF 印刷所封面",
       "icon": "fa-book-bookmark",
       "iconColor": "#ef4444",
-      "badge": ".NET 8 混元真氣",
+      "badge": "Windows 桌面",
       "badgeClass": "badge-native",
       "version": "v4.5.0",
-      "action": "裁雲印製",
+      "action": "開始轉檔",
       "featured": true,
       "versionLabel": "下載"
     },
     {
-      "name": "星宿分疆・乾坤芥子八卦閣｜桌面分區面板",
+      "name": "桌面分區收納格",
       "category": "native",
-      "description": "須彌納於芥子，於方寸案頭佈下乾坤結界。八門遁甲自動歸位，法寶神兵各安其所，智慧吸附與多版面一鍵瞬移，免安裝隨身自成洞天。",
+      "description": "在桌面規劃分區面板，圖示自動歸位、智慧吸附，多組版面一鍵切換，免安裝可隨身攜帶。",
       "tags": [
         "C# (.NET 8)",
-        "WPF 乾坤法陣",
-        "八門遁甲吸附",
-        "免安裝洞天"
+        "WPF",
+        "智慧吸附",
+        "免安裝"
       ],
       "url": "https://github.com/lianghao02/DesktopFramesPlus",
       "image": "images/banner_DesktopFramesPlus.webp",
-      "alt": "星宿分疆・乾坤芥子八卦閣",
+      "alt": "桌面分區收納格封面",
       "icon": "fa-cubes-stacked",
       "iconColor": "#3b82f6",
-      "badge": ".NET 8 混元真氣",
+      "badge": "Windows 桌面",
       "badgeClass": "badge-native",
       "version": "v2.11.0",
-      "action": "布設結界",
+      "action": "整理桌面",
       "featured": true
     },
     {
-      "name": "滄海擷珠・雲笈玉牒歸真法｜Google 相簿整理",
+      "name": "相簿整理收納盒",
       "category": "native",
-      "description": "自九霄雲海取回百萬時光浮光，縱然殘卷錯落，亦能按時光輪迴理清年月。純本機無損複製、清冊審查對帳與時光回溯，元氣歸元、玉牒煥然一新。",
+      "description": "把 Google 相簿匯出的檔案按拍攝年月整理。純本機無損複製，並提供清冊審查對帳與時間回溯。",
       "tags": [
         "Python 3.13",
         "PySide6",
-        "本機純複製無損",
-        "時光玉牒歸檔"
+        "本機無損複製",
+        "年月歸檔"
       ],
       "url": "https://github.com/lianghao02/14_Google-Photos-Takeout-Organizer",
       "image": "images/banner_Google-Photos-Takeout-Organizer.webp",
-      "alt": "滄海擷珠・雲笈玉牒歸真法",
+      "alt": "相簿整理收納盒封面",
       "icon": "fa-cloud-arrow-down",
       "iconColor": "#38bdf8",
-      "badge": "本機無損純陽",
+      "badge": "Windows 桌面",
       "badgeClass": "badge-native",
       "version": "v1.3.1",
-      "action": "擷珠歸真",
+      "action": "整理相簿",
       "featured": true
     },
     {
-      "name": "大衍追風・天眼快篩搜神陣｜科技鑑識",
+      "name": "影片快篩偵測站",
       "category": "ai",
-      "description": "Python 飛劍引動神識，佈下萬里追風鎖形大陣。整合 YOLO 目標偵測與 PyAV 影音解碼，瞬息甄別千萬浮光掠影，鎖定妖邪蹤跡，明察秋毫。",
+      "description": "Python 影片快速篩選工具，整合 YOLO 目標偵測與 PyAV 影音解碼，快速找出關鍵畫面。",
       "tags": [
         "Python 3.13",
-        "PyAV 影音陣",
-        "YOLO 天眼神識",
-        "神速快篩"
+        "PyAV",
+        "YOLO",
+        "快速篩選"
       ],
       "url": "https://github.com/lianghao02/AG-MONITOR-Smart-Video-Screening",
       "image": "images/banner_AG-Monitor-Forensics.webp",
-      "alt": "大衍追風・天眼快篩搜神陣",
+      "alt": "影片快篩偵測站封面",
       "icon": "fa-crosshairs",
       "iconColor": "#0f766e",
-      "badge": "Python 3.13 靈識",
+      "badge": "AI 智慧",
       "badgeClass": "badge-ai",
       "version": "v4.0.1",
-      "action": "啟動搜神",
+      "action": "開始快篩",
       "featured": true
     },
     {
-      "name": "天機偃師・藏經破陣機巧人｜研習自動化",
+      "name": "研習自動化機器人",
       "category": "ai",
-      "description": "上古魯班機關甲士，通曉萬卷典籍試煉難題。搭載人機靈犀作答、ddddocr 破障符眼辨識與剪貼簿智慧解析，化繁為簡如庖丁解牛，日行萬里過關斬將。",
+      "description": "研習課程自動化：人機協作作答、ddddocr 驗證碼辨識與剪貼簿智慧解析，減少重複操作。",
       "tags": [
         "Python 3.13",
-        "Selenium 機巧",
+        "Selenium",
         "PySide6",
-        "ddddocr 符眼"
+        "ddddocr"
       ],
       "url": "https://github.com/lianghao02/auto-learning-bot",
       "image": "images/banner_auto-learning-bot.webp",
-      "alt": "天機偃師・藏經破陣機巧人",
+      "alt": "研習自動化機器人封面",
       "icon": "fa-gears",
       "iconColor": "#8b5cf6",
-      "badge": "Python 3.13 靈識",
+      "badge": "AI 智慧",
       "badgeClass": "badge-ai",
       "version": "V2.0.1",
-      "action": "驅策機關",
+      "action": "啟動機器人",
       "featured": false
     },
     {
-      "name": "無相神隱・玄武閉息去識術｜影音去識別化",
+      "name": "影音隱身斗篷",
       "category": "ai",
-      "description": "遁入空門無相之境，玄武神甲隱去真容面貌。YuNet AI 追蹤、關鍵影格平滑補間、純聲學 VAD 語音活動標記，100% 離線運轉，落音成字、守口如瓶。",
+      "description": "對影音自動遮蔽人臉並標記語音區段：YuNet AI 追蹤、關鍵影格平滑補間、純聲學 VAD，100% 離線運轉。",
       "tags": [
         "PySide6",
-        "YuNet 追蹤神識",
-        "VAD 聲學心法",
-        "無相隱匿"
+        "YuNet 追蹤",
+        "VAD 語音標記",
+        "100% 離線"
       ],
       "url": "https://github.com/lianghao02/ClipMask-AI",
       "image": "images/banner_ClipMask-AI.webp",
-      "alt": "無相神隱・玄武閉息去識術",
+      "alt": "影音隱身斗篷封面",
       "icon": "fa-mask-face",
       "iconColor": "#5f8768",
-      "badge": "Python 3.13 靈識",
+      "badge": "AI 智慧",
       "badgeClass": "badge-ai",
       "version": "v1.1.1",
-      "action": "施展無相",
+      "action": "開始隱身",
       "featured": false
     }
   ];
@@ -400,21 +400,28 @@ function createCard(project) {
   // 精選作品星標徽章
   if (project.featured) {
     const featuredBadge = element("span", "featured-badge");
-    featuredBadge.innerHTML = '<i class="fa-solid fa-star" aria-hidden="true"></i> 鎮派絕學';
+    featuredBadge.innerHTML = '<i class="fa-solid fa-star" aria-hidden="true"></i> 精選';
     banner.append(featuredBadge);
   }
 
-  // 專案類型標記（Web App vs 開源桌面）
-  const targetLabel = categories[project.category]?.targetLabel || "專案";
-  const targetPill = element("span", "target-pill", targetLabel);
-  banner.append(targetPill);
-
-  // 專案封面圖
-  const image = document.createElement("img");
-  image.src = project.image;
-  image.alt = project.alt || project.name;
-  image.loading = "lazy";
-  banner.append(image);
+  // 專案封面：Q 版遊戲道具圖塊（粗描邊色塊＋大圖示）；之後若有新插畫，把 USE_ARTWORK 設為 true 即改用 project.image
+  const category = categories[project.category];
+  if (USE_ARTWORK && project.image) {
+    const image = document.createElement("img");
+    image.src = project.image;
+    image.alt = project.alt || project.name;
+    image.loading = "lazy";
+    banner.append(image);
+  } else {
+    const ink = project.iconColor || category?.color || "#334155";
+    banner.style.setProperty("--tile-bg", `color-mix(in srgb, ${ink} 20%, #FFFFFF)`);
+    banner.style.setProperty("--tile-ink", ink);
+    banner.classList.add("is-tile");
+    const emblem = element("span", "tile-emblem");
+    emblem.setAttribute("aria-hidden", "true");
+    emblem.append(element("i", `fa-solid ${project.icon}`));
+    banner.append(emblem);
+  }
 
   // 卡片主體
   const body = element("div", "card-body");
@@ -449,7 +456,7 @@ function createCard(project) {
       const tagEl = element("span", `tag${isTagActive ? " is-active" : ""}`, tag);
       tagEl.setAttribute("role", "button");
       tagEl.setAttribute("tabindex", "0");
-      tagEl.title = isTagActive ? `取消「${tag}」篩選` : `點擊篩選「${tag}」相關法寶`;
+      tagEl.title = isTagActive ? `取消「${tag}」篩選` : `點擊篩選「${tag}」相關工具`;
       const handleTagClick = (event) => {
         event.preventDefault();
         event.stopPropagation();
@@ -475,7 +482,7 @@ function createCard(project) {
   // 卡片底部（行動指引 + 可選說明頁按鈕 + 箭頭按鈕）
   const footer = element("div", "card-footer");
   const footerLeft = element("div", "card-footer-left");
-  const actionHint = element("span", "action-hint", project.url.includes("github.io") ? "即開即用" : "開源專案");
+  const actionHint = element("span", "action-hint", project.url.includes("github.io") ? "免安裝" : "開源專案");
   footerLeft.append(actionHint);
   if (project.guideUrl && typeof project.guideUrl === "string" && project.guideUrl.trim()) {
     const guideBtn = element("button", "guide-btn");
