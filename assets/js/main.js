@@ -49,7 +49,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#0ea5e9",
       "badge": "天機免安裝",
       "badgeClass": "badge-web",
-      "version": "v3.2.3",
+      "version": "v3.2.4",
       "action": "撥動羅盤",
       "featured": true,
       "versionLabel": "線上"
@@ -92,7 +92,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#d97706",
       "badge": "天機免安裝",
       "badgeClass": "badge-web",
-      "version": "v1.8.0",
+      "version": "v1.8.1",
       "action": "啟算靈石",
       "featured": false
     },
@@ -113,7 +113,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#10b981",
       "badge": "天機免安裝",
       "badgeClass": "badge-web",
-      "version": "v1.3.0",
+      "version": "v1.3.1",
       "action": "觀覽時序",
       "featured": false
     },
@@ -179,7 +179,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#f59e0b",
       "badge": "天機免安裝",
       "badgeClass": "badge-web",
-      "version": "v1.2.0",
+      "version": "v1.2.1",
       "action": "執掌度支",
       "featured": false
     },
@@ -200,7 +200,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#84cc16",
       "badge": "天機免安裝",
       "badgeClass": "badge-web",
-      "version": "v1.6.2",
+      "version": "v1.6.5",
       "action": "開爐調香",
       "featured": false,
       "versionLabel": "線上"
@@ -307,7 +307,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#38bdf8",
       "badge": "本機無損純陽",
       "badgeClass": "badge-native",
-      "version": "v1.3.0",
+      "version": "v1.3.1",
       "action": "擷珠歸真",
       "featured": true
     },
@@ -370,7 +370,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#5f8768",
       "badge": "Python 3.13 靈識",
       "badgeClass": "badge-ai",
-      "version": "v1.1.0",
+      "version": "v1.1.1",
       "action": "施展無相",
       "featured": false
     }
