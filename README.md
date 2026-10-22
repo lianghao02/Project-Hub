@@ -108,7 +108,7 @@ python scripts/validate_projects.py
 ├─ data/projects.json             # 展示資料單一來源（共 16 件神兵法寶）
 ├─ docs/BASELINE.md               # 重構前網站基準
 ├─ downloads/                     # photo_report.html 使用的必要下載檔
-├─ images/                        # 專案卡片圖片（含 banner_Wuxia-Typing-Legend.png）
+├─ images/                        # 專案卡片圖片（含 banner_Wuxia-Typing-Legend.webp）
 ├─ scripts/sync_projects.py       # 一鍵自動同步版本號與備援
 ├─ scripts/validate_projects.py   # 專案資料合規驗證
 ├─ scripts/update_project_hub.py

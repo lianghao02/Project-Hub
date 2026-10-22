@@ -43,7 +43,7 @@ const FALLBACK_PROJECTS = [
         "時序軌跡密法"
       ],
       "url": "https://lianghao02.github.io/Cell-Tower-Map-Locator/",
-      "image": "images/banner_Cell-Tower-Map-Locator.png",
+      "image": "images/banner_Cell-Tower-Map-Locator.webp",
       "alt": "萬里烽火・天罡羅盤",
       "icon": "fa-compass",
       "iconColor": "#0ea5e9",
@@ -65,7 +65,7 @@ const FALLBACK_PROJECTS = [
         "道牒零巨集"
       ],
       "url": "https://lianghao02.github.io/Photo-Report-Generator/",
-      "image": "images/banner_Photo-Report-Generator.png",
+      "image": "images/banner_Photo-Report-Generator.webp",
       "alt": "天機百景・乾坤照影卷",
       "icon": "fa-scroll",
       "iconColor": "#14b8a6",
@@ -86,7 +86,7 @@ const FALLBACK_PROJECTS = [
         "密帳金匱"
       ],
       "url": "https://lianghao02.github.io/Financial-Data-Parser/",
-      "image": "images/banner_Financial-Data-Parser.png",
+      "image": "images/banner_Financial-Data-Parser.webp",
       "alt": "九章靈算・金匱天籌錄",
       "icon": "fa-calculator",
       "iconColor": "#d97706",
@@ -107,7 +107,7 @@ const FALLBACK_PROJECTS = [
         "GAS 雲端符契"
       ],
       "url": "https://calendar-family-lianghao02.web.app/",
-      "image": "images/banner_Calendar-Card-App.png",
+      "image": "images/banner_Calendar-Card-App.webp",
       "alt": "問道四時・太陰太陽時辰曆",
       "icon": "fa-calendar-check",
       "iconColor": "#10b981",
@@ -128,7 +128,7 @@ const FALLBACK_PROJECTS = [
         "大千注音免選字"
       ],
       "url": "https://lianghao02.github.io/16_Wuxia-Typing-Legend/",
-      "image": "images/banner_Wuxia-Typing-Legend.png",
+      "image": "images/banner_Wuxia-Typing-Legend.webp",
       "alt": "文印江湖・大千天機打字傳",
       "icon": "fa-feather-pointed",
       "iconColor": "#b45309",
@@ -216,7 +216,7 @@ const FALLBACK_PROJECTS = [
         "混元多核並行"
       ],
       "url": "https://github.com/lianghao02/Police-Image-Toolkit",
-      "image": "images/banner_Police-Image-Toolkit.png",
+      "image": "images/banner_Police-Image-Toolkit.webp",
       "alt": "破妄神目・照妖鑑真神兵錄",
       "icon": "fa-eye",
       "iconColor": "#6366f1",
@@ -237,7 +237,7 @@ const FALLBACK_PROJECTS = [
         "歸元無濁"
       ],
       "url": "https://github.com/lianghao02/System-Optimizer-Tool",
-      "image": "images/banner_System-Optimizer-Tool.png",
+      "image": "images/banner_System-Optimizer-Tool.webp",
       "alt": "太清滌塵・靈脈疏通歸元訣",
       "icon": "fa-wind",
       "iconColor": "#eab308",
@@ -280,7 +280,7 @@ const FALLBACK_PROJECTS = [
         "免安裝洞天"
       ],
       "url": "https://github.com/lianghao02/DesktopFramesPlus",
-      "image": "images/banner_DesktopFramesPlus.png",
+      "image": "images/banner_DesktopFramesPlus.webp",
       "alt": "星宿分疆・乾坤芥子八卦閣",
       "icon": "fa-cubes-stacked",
       "iconColor": "#3b82f6",
@@ -322,7 +322,7 @@ const FALLBACK_PROJECTS = [
         "神速快篩"
       ],
       "url": "https://github.com/lianghao02/AG-MONITOR-Smart-Video-Screening",
-      "image": "images/banner_AG-Monitor-Forensics.png",
+      "image": "images/banner_AG-Monitor-Forensics.webp",
       "alt": "大衍追風・天眼快篩搜神陣",
       "icon": "fa-crosshairs",
       "iconColor": "#0f766e",
@@ -343,7 +343,7 @@ const FALLBACK_PROJECTS = [
         "ddddocr 符眼"
       ],
       "url": "https://github.com/lianghao02/auto-learning-bot",
-      "image": "images/banner_auto-learning-bot.png",
+      "image": "images/banner_auto-learning-bot.webp",
       "alt": "天機偃師・藏經破陣機巧人",
       "icon": "fa-gears",
       "iconColor": "#8b5cf6",
@@ -364,7 +364,7 @@ const FALLBACK_PROJECTS = [
         "無相隱匿"
       ],
       "url": "https://github.com/lianghao02/ClipMask-AI",
-      "image": "images/banner_ClipMask-AI.png",
+      "image": "images/banner_ClipMask-AI.webp",
       "alt": "無相神隱・玄武閉息去識術",
       "icon": "fa-mask-face",
       "iconColor": "#5f8768",
