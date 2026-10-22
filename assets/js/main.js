@@ -286,7 +286,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#3b82f6",
       "badge": "Windows 桌面",
       "badgeClass": "badge-native",
-      "version": "v2.11.0",
+      "version": "v2.11.1",
       "action": "整理桌面",
       "featured": true
     },

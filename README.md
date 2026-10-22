@@ -29,29 +29,11 @@ Project Hub 是對外展示專案定位、版本與下載入口的靜態網站�
 | Windows 桌面 | **影像鑑識放大鏡**｜Windows 原生 C# .NET 8 影像鑑識工具，支援 iPhone 4K 60fps 與 HEIC 高速並行轉檔，細節銳化清楚 | `v11.4.0` | [開啟放大鏡](https://github.com/lianghao02/Police-Image-Toolkit) |
 | Windows 桌面 | **系統清理小幫手**｜300 KB 單檔小工具，秒開即用，一鍵釋放 Win32 待命快取 | `v6.2.3` | [一鍵清理](https://github.com/lianghao02/System-Optimizer-Tool) |
 | Windows 桌面 | **PDF 印刷所**｜掌握各式文件尺寸與排版，以 WinRT 縮圖與 STA 隔離完成轉檔，快速把文件合成 PDF | `下載 v4.5.0` | [開始轉檔](https://github.com/lianghao02/PaperSwitch) |
-| Windows 桌面 | **桌面分區收納格**｜在桌面規劃分區面板，圖示自動歸位、智慧吸附，多組版面一鍵切換，免安裝可隨身攜帶 | `v2.11.0` | [整理桌面](https://github.com/lianghao02/DesktopFramesPlus) |
+| Windows 桌面 | **桌面分區收納格**｜在桌面規劃分區面板，圖示自動歸位、智慧吸附，多組版面一鍵切換，免安裝可隨身攜帶 | `v2.11.1` | [整理桌面](https://github.com/lianghao02/DesktopFramesPlus) |
 | Windows 桌面 | **相簿整理收納盒**｜把 Google 相簿匯出的檔案按拍攝年月整理 | `v1.3.1` | [整理相簿](https://github.com/lianghao02/14_Google-Photos-Takeout-Organizer) |
 | AI 智慧 | **影片快篩偵測站**｜Python 影片快速篩選工具，整合 YOLO 目標偵測與 PyAV 影音解碼，快速找出關鍵畫面 | `v4.0.1` | [開始快篩](https://github.com/lianghao02/AG-MONITOR-Smart-Video-Screening) |
 | AI 智慧 | **研習自動化機器人**｜研習課程自動化：人機協作作答、ddddocr 驗證碼辨識與剪貼簿智慧解析，減少重複操作 | `V2.0.1` | [啟動機器人](https://github.com/lianghao02/auto-learning-bot) |
 | AI 智慧 | **影音隱身斗篷**｜對影音自動遮蔽人臉並標記語音區段：YuNet AI 追蹤、關鍵影格平滑補間、純聲學 VAD，100% 離線運轉 | `v1.1.1` | [開始隱身](https://github.com/lianghao02/ClipMask-AI) |
-
----|---|---|---|
-| **輕靈法寶 (Web SPA)** | **萬里烽火・天罡羅盤**｜電信基地台即時定位 | `線上 v3.2.2` | [撥動羅盤](https://lianghao02.github.io/Cell-Tower-Map-Locator/) |
-| **輕靈法寶 (Web SPA)** | **天機百景・乾坤照影卷**｜現況照片清冊生成器 | `v2.4.0` | [展開圖卷](https://lianghao02.github.io/Photo-Report-Generator/) |
-| **輕靈法寶 (Web SPA)** | **九章靈算・金匱天籌錄**｜金融資料 CSV 轉 Excel | `v1.8.0` | [啟算靈石](https://lianghao02.github.io/Financial-Data-Parser/) |
-| **輕靈法寶 (Web SPA)** | **問道四時・太陰太陽時辰曆**｜卡片式行事曆 App | `v1.3.0` | [觀覽時序](https://calendar-family-lianghao02.web.app/) |
-| **輕靈法寶 (Web SPA)** | **文印江湖・大千天機打字傳**｜新國風闖關 | `線上 v2.2.3` | [拔劍修煉](https://lianghao02.github.io/16_Wuxia-Typing-Legend/) ｜ [文印劍訣歷程](wuxia_typing.html) |
-| **輕靈法寶 (Web SPA)** | **尋龍探脈・玄天鏈流照妖鑑**｜鏈上金流查核 | `v1.6.0` | [探察鏈流](https://github.com/lianghao02/chainflow-inspector) |
-| **輕靈法寶 (Web SPA)** | **乾坤節度・靈石月俸度支司**｜固定支出管家 | `v1.2.0` | [執掌度支](https://subscription-ledger-f77fd.web.app) |
-| **輕靈法寶 (Web SPA)** | **百草天香・神農玉液煉丹坊**｜手作精油配方管理 | `線上 v1.6.2` | [開爐調香](https://lianghao02.github.io/AromaCraft-Studio/) |
-| **玄鐵神兵 (.NET 8)** | **破妄神目・照妖鑑真神兵錄**｜警務影像轉檔銳化 | `v11.4.0` | [祭出神目](https://github.com/lianghao02/Police-Image-Toolkit) |
-| **玄鐵神兵 (.NET 8)** | **太清滌塵・靈脈疏通歸元訣**｜系統快取清理 | `v6.2.3` | [運轉歸元](https://github.com/lianghao02/System-Optimizer-Tool) |
-| **玄鐵神兵 (.NET 8)** | **裁雲剪雪・玉版符牒工坊**｜PaperSwitch 文件轉檔 | `下載 v4.5.0` | [裁雲印製](https://github.com/lianghao02/PaperSwitch) |
-| **玄鐵神兵 (.NET 8)** | **星宿分疆・乾坤芥子八卦閣**｜桌面分區面板 | `v2.11.0` | [布設結界](https://github.com/lianghao02/DesktopFramesPlus) |
-| **通天靈識 (Python)** | **滄海擷珠・雲笈玉牒歸真法**｜Google 相簿整理 | `v1.3.0` | [擷珠歸真](https://github.com/lianghao02/14_Google-Photos-Takeout-Organizer) |
-| **通天靈識 (Python)** | **大衍追風・天眼快篩搜神陣**｜科技鑑識快篩 | `v4.0.1` | [啟動搜神](https://github.com/lianghao02/AG-MONITOR-Smart-Video-Screening) |
-| **通天靈識 (Python)** | **天機偃師・藏經破陣機巧人**｜研習自動化機器人 | `V2.0.1` | [驅策機關](https://github.com/lianghao02/auto-learning-bot) |
-| **通天靈識 (Python)** | **無相神隱・玄武閉息去識術**｜影音去識別與聽打 | `v1.1.0` | [施展無相](https://github.com/lianghao02/ClipMask-AI) |
 
 ---
 
