@@ -49,7 +49,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#0ea5e9",
       "badge": "免安裝網頁",
       "badgeClass": "badge-web",
-      "version": "v3.2.4",
+      "version": "v3.3.0",
       "action": "開啟雷達",
       "featured": true,
       "versionLabel": "線上"
