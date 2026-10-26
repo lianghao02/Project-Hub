@@ -3,8 +3,8 @@
  * 支援即時搜尋過濾、分類切換、精選標記與流暢互動
  */
 
-// 封面模式：false＝CSS 圖塊（預設），true＝使用 data 內的 image 插畫
-const USE_ARTWORK = false;
+// 封面模式：使用各專案的情境插畫，未提供圖片時保留圖示備援。
+const USE_ARTWORK = true;
 
 const categories = {
   web: {
@@ -404,13 +404,16 @@ function createCard(project) {
     banner.append(featuredBadge);
   }
 
-  // 專案封面：Q 版遊戲道具圖塊（粗描邊色塊＋大圖示）；之後若有新插畫，把 USE_ARTWORK 設為 true 即改用 project.image
+  // 專案封面：各專案獨立情境插畫。
   const category = categories[project.category];
   if (USE_ARTWORK && project.image) {
     const image = document.createElement("img");
     image.src = project.image;
     image.alt = project.alt || project.name;
     image.loading = "lazy";
+    image.decoding = "async";
+    image.width = 1200;
+    image.height = 400;
     banner.append(image);
   } else {
     const ink = project.iconColor || category?.color || "#334155";
