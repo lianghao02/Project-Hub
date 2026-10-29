@@ -33,7 +33,7 @@ Project Hub 是對外展示專案定位、版本與下載入口的靜態網站�
 | Windows 桌面 | **相簿整理收納盒**｜把 Google 相簿匯出的檔案按拍攝年月整理 | `v1.3.1` | [整理相簿](https://github.com/lianghao02/14_Google-Photos-Takeout-Organizer) |
 | AI 智慧 | **影片快篩偵測站**｜Python 影片快速篩選工具，整合 YOLO 目標偵測與 PyAV 影音解碼，快速找出關鍵畫面 | `v4.0.1` | [開始快篩](https://github.com/lianghao02/AG-MONITOR-Smart-Video-Screening) |
 | AI 智慧 | **研習自動化機器人**｜研習課程自動化：人機協作作答、ddddocr 驗證碼辨識與剪貼簿智慧解析，減少重複操作 | `V2.0.1` | [啟動機器人](https://github.com/lianghao02/auto-learning-bot) |
-| AI 智慧 | **影音隱身斗篷**｜對影音自動遮蔽人臉並標記語音區段：YuNet AI 追蹤、關鍵影格平滑補間、純聲學 VAD，100% 離線運轉 | `v1.1.1` | [開始隱身](https://github.com/lianghao02/ClipMask-AI) |
+| AI 智慧 | **影音隱身斗篷**｜對影音自動遮蔽人臉並標記語音區段：YuNet AI 追蹤、關鍵影格平滑補間、純聲學 VAD，100% 離線運轉 | `v1.2.0` | [開始隱身](https://github.com/lianghao02/ClipMask-AI) |
 
 ---
 
