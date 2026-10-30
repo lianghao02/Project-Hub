@@ -349,7 +349,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#8b5cf6",
       "badge": "AI 智慧",
       "badgeClass": "badge-ai",
-      "version": "V2.0.1",
+      "version": "V2.1.0",
       "action": "啟動機器人",
       "featured": false
     },
