@@ -263,6 +263,39 @@
       text-decoration: none;
     }
 
+    .hub-nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .nav-back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #38bdf8;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 6px 14px;
+      background: rgba(30, 41, 59, 0.8);
+      border: 1px solid #0284c7;
+      border-radius: 20px;
+      transition: all 0.2s ease;
+    }
+    .nav-back-link:hover {
+      background: #0284c7;
+      color: #ffffff;
+      transform: translateX(-2px);
+    }
+    .nav-status-pill {
+      font-size: 12px;
+      color: #94a3b8;
+      font-weight: 600;
+    }
+
     @media (max-width: 600px) {
       .quest-grid {
         grid-template-columns: 1fr;
@@ -280,6 +313,16 @@
 <body>
 
   <div class="container">
+
+    <!-- 頂部返回導覽列 -->
+    <nav class="hub-nav-bar" aria-label="冒險大廳導航">
+      <a href="index.html" class="nav-back-link">
+        ⬅️ 返回 LiangHao 工具村作品首頁
+      </a>
+      <span class="nav-status-pill">
+        🛡️ LiangHao 全域開發憲法守護
+      </span>
+    </nav>
 
     <!-- 頂部冒險者 HUD -->
     <header class="hud-header">

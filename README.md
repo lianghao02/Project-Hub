@@ -14,25 +14,24 @@ Project Hub 是對外展示專案定位、版本與下載入口的靜態網站�
 
 ---
 
-## 展示專案總覽（共 16 個工具）
+## 展示專案總覽（共 15 個工具）
 
 | 分類 | 工具名稱 / 說明 | 版本 | 入口 |
 |---|---|---|---|
-| 網頁（免安裝） | **基地台定位雷達**｜在地圖上快速定位基地台，依時間順序畫出移動軌跡，並支援現地導航 | `線上 v3.2.4` | [開啟雷達](https://lianghao02.github.io/Cell-Tower-Map-Locator/) |
+| 網頁（免安裝） | **基地台定位雷達**｜在地圖上快速定位基地台，依時間順序畫出移動軌跡，並支援現地導航 | `線上 v3.3.0` | [開啟雷達](https://lianghao02.github.io/Cell-Tower-Map-Locator/) |
 | 網頁（免安裝） | **照片清冊工坊**｜把現場照片整理成標準 docx 照片清冊 | `v2.4.1` | [開啟工坊](https://lianghao02.github.io/Photo-Report-Generator/) |
 | 網頁（免安裝） | **金融資料轉檔機**｜轉換金融資料並保留前導零不被吞掉 | `v1.8.1` | [開始轉檔](https://lianghao02.github.io/Financial-Data-Parser/) |
 | 網頁（免安裝） | **卡片行事曆手帳**｜卡片式行事曆，配色淡雅，支援離線使用與 Google Apps Script 雲端同步 | `v1.3.1` | [打開手帳](https://calendar-family-lianghao02.web.app/) |
 | 網頁（免安裝） | **武俠打字傳**｜專為臺灣學童設計的國風打字闖關遊戲：六章 30 關、刀槍劍三流派、五行屬性，收錄教育部小字典 4,311 字 | `線上 v2.2.3` | [開始闖關](https://lianghao02.github.io/16_Wuxia-Typing-Legend/) |
 | 網頁（免安裝） | **鏈上金流追蹤站**｜查看公開鏈上資料的資金流向，涵蓋 Polymarket 與多鏈金流，以圖譜呈現關聯，協助取證與查核 | `v1.6.1` | [開始追蹤](https://github.com/lianghao02/chainflow-inspector) |
 | 網頁（免安裝） | **固定支出管家**｜管理每月固定支出，明細一目了然 | `v1.2.1` | [查看帳本](https://subscription-ledger-f77fd.web.app) |
-| 網頁（免安裝） | **精油調配工坊**｜精油配方調製與成本利潤雙模式試算，手機採雙欄工作區，可透過 Google Sheets 家庭共用 | `線上 v1.6.5` | [開始調配](https://lianghao02.github.io/AromaCraft-Studio/) |
+| 網頁（免安裝） | **精油調配工坊**｜精油配方調製與成本利潤雙模式試算，手機採雙欄工作區，可透過 Google Sheets 家庭共用 | `線上 v1.8.2` | [開始調配](https://lianghao02.github.io/AromaCraft-Studio/) |
 | Windows 桌面 | **影像鑑識放大鏡**｜Windows 原生 C# .NET 8 影像鑑識工具，支援 iPhone 4K 60fps 與 HEIC 高速並行轉檔，細節銳化清楚 | `v11.4.0` | [開啟放大鏡](https://github.com/lianghao02/Police-Image-Toolkit) |
-| Windows 桌面 | **系統清理小幫手**｜300 KB 單檔小工具，秒開即用，一鍵釋放 Win32 待命快取 | `v6.2.3` | [一鍵清理](https://github.com/lianghao02/System-Optimizer-Tool) |
-| Windows 桌面 | **PDF 印刷所**｜掌握各式文件尺寸與排版，以 WinRT 縮圖與 STA 隔離完成轉檔，快速把文件合成 PDF | `下載 v4.5.0` | [開始轉檔](https://github.com/lianghao02/PaperSwitch) |
+| Windows 桌面 | **PDF 印刷所**｜掌握各式文件尺寸與排版，以 WinRT 縮圖與 STA 隔離完成轉檔，快速把文件合成 PDF | `下載 v4.6.0` | [開始轉檔](https://github.com/lianghao02/PaperSwitch) |
 | Windows 桌面 | **桌面分區收納格**｜在桌面規劃分區面板，圖示自動歸位、智慧吸附，多組版面一鍵切換，免安裝可隨身攜帶 | `v2.11.1` | [整理桌面](https://github.com/lianghao02/DesktopFramesPlus) |
-| Windows 桌面 | **相簿整理收納盒**｜把 Google 相簿匯出的檔案按拍攝年月整理 | `v1.3.1` | [整理相簿](https://github.com/lianghao02/14_Google-Photos-Takeout-Organizer) |
+| Windows 桌面 | **相簿整理收納盒**｜把 Google 相簿匯出的檔案按拍攝年月整理，亦支援雲端冒險大廳 | `v1.3.1` | [整理相簿](https://github.com/lianghao02/14_Google-Photos-Takeout-Organizer)・[🎮 雲端大廳](colab.html) |
 | AI 智慧 | **影片快篩偵測站**｜Python 影片快速篩選工具，整合 YOLO 目標偵測與 PyAV 影音解碼，快速找出關鍵畫面 | `v4.0.1` | [開始快篩](https://github.com/lianghao02/AG-MONITOR-Smart-Video-Screening) |
-| AI 智慧 | **研習自動化機器人**｜研習課程自動化：人機協作作答、ddddocr 驗證碼辨識與剪貼簿智慧解析，減少重複操作 | `V2.0.1` | [啟動機器人](https://github.com/lianghao02/auto-learning-bot) |
+| AI 智慧 | **研習自動化機器人**｜研習課程自動化：人機協作作答、ddddocr 驗證碼辨識與剪貼簿智慧解析，減少重複操作 | `V2.1.0` | [啟動機器人](https://github.com/lianghao02/auto-learning-bot) |
 | AI 智慧 | **影音隱身斗篷**｜對影音自動遮蔽人臉並標記語音區段：YuNet AI 追蹤、關鍵影格平滑補間、純聲學 VAD，100% 離線運轉 | `v1.2.0` | [開始隱身](https://github.com/lianghao02/ClipMask-AI) |
 
 ---
@@ -97,6 +96,7 @@ python scripts/validate_projects.py
 
 ## 特殊頁面與下載
 
+- [colab.html](colab.html)：**梁巡官的 AI 雲端冒險大廳 (Colab Quest Hub)**，整合 Google Colab 雲端免硬體算力的 Takeout 相簿整理去重與 AI 人臉千里搜圖水晶球。
 - [wuxia_typing.html](wuxia_typing.html)：《武俠打字傳》的完整專案概念、遊戲方法、30 關境界題本配置與五大階段開發歷程專頁。
 - [photo_report.html](photo_report.html)：舊版 Excel/VBA 照片清冊工具的獨立介紹與下載頁，並非 Photo-Report-Generator Web 應用程式的副本，因此保留維護。`downloads/Photo_Report.rar` 仍由此頁使用。
 
@@ -105,14 +105,15 @@ python scripts/validate_projects.py
 ```text
 .
 ├─ assets/js/main.js              # 載入 metadata 並渲染卡片（含 file:/// 離線 FALLBACK_PROJECTS）
-├─ data/projects.json             # 展示資料單一來源（共 16 個工具）
+├─ data/projects.json             # 展示資料單一來源（共 15 個工具）
 ├─ docs/BASELINE.md               # 重構前網站基準
 ├─ downloads/                     # photo_report.html 使用的必要下載檔
 ├─ images/                        # 專案卡片圖片（含 banner_Wuxia-Typing-Legend.webp）
 ├─ scripts/sync_projects.py       # 一鍵自動同步版本號與備援
 ├─ scripts/validate_projects.py   # 專案資料合規驗證
 ├─ scripts/update_project_hub.py
-├─ index.html                     # 作品集首頁
+├─ index.html                     # 作品集首頁（整合 Colab 冒險大廳快速入口）
+├─ colab.html                     # 梁巡官的 AI 雲端冒險大廳 (Colab Quest Hub)
 ├─ wuxia_typing.html              # 武俠打字傳・玩法指南與開發歷程專頁
 └─ photo_report.html              # 經典照片清冊工具專頁
 ```

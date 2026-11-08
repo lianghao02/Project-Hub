@@ -151,6 +151,147 @@
       box-shadow: var(--game-shadow-btn-active);
     }
 
+    .colab-nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      border: var(--game-outline);
+      border-radius: 9px;
+      padding: 0.3rem 0.75rem;
+      color: #0369a1;
+      font-size: 0.8rem;
+      font-weight: 800;
+      background: #e0f2fe;
+      box-shadow: 0 2.5px 0 var(--game-border-color);
+      transition: var(--game-transition);
+    }
+    .colab-nav-btn:hover {
+      background: #bae6fd;
+      transform: translateY(-1px);
+      box-shadow: var(--game-shadow-btn);
+    }
+    .colab-nav-btn:active {
+      transform: translateY(2px);
+      box-shadow: var(--game-shadow-btn-active);
+    }
+
+    /* 雲端冒險大廳特色橫幅 (Chunky 2D Banner) */
+    .colab-portal-container {
+      max-width: 1280px;
+      margin: 0.75rem auto 1rem;
+      padding: 0 1.25rem;
+    }
+    .colab-portal-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+      background: linear-gradient(135deg, #eff6ff 0%, #faf5ff 100%);
+      border: var(--game-outline-lg);
+      border-radius: var(--game-radius-card);
+      padding: 1rem 1.4rem;
+      box-shadow: var(--game-shadow-card);
+      transition: var(--game-transition);
+      cursor: pointer;
+    }
+    .colab-portal-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--game-shadow-card-hover);
+      border-color: #2563eb;
+    }
+    .colab-portal-icon {
+      width: 52px;
+      height: 52px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      border: var(--game-outline);
+      border-radius: 12px;
+      background: #38bdf8;
+      color: #0f172a;
+      font-size: 1.5rem;
+      box-shadow: 0 3px 0 var(--game-border-color);
+    }
+    .colab-portal-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .colab-portal-badge-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.35rem;
+      flex-wrap: wrap;
+    }
+    .portal-badge {
+      font-size: 0.7rem;
+      font-weight: 800;
+      padding: 0.15rem 0.5rem;
+      border-radius: var(--game-radius-pill);
+      border: var(--game-outline-sm);
+      display: inline-block;
+    }
+    .portal-badge-new {
+      background: var(--game-gold);
+      color: var(--game-text-main);
+    }
+    .portal-badge-free {
+      background: #dcfce7;
+      color: #166534;
+    }
+    .colab-portal-title {
+      font-size: 1.12rem;
+      font-weight: 900;
+      color: var(--game-text-main);
+      margin: 0 0 0.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .colab-portal-desc {
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: var(--game-text-sub);
+      margin: 0;
+      line-height: 1.4;
+    }
+    .colab-portal-action {
+      flex-shrink: 0;
+    }
+    .colab-portal-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.55rem 1.15rem;
+      background: #0284c7;
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 0.88rem;
+      border: var(--game-outline);
+      border-radius: var(--game-radius-btn);
+      box-shadow: var(--game-shadow-btn);
+      transition: var(--game-transition);
+    }
+    .colab-portal-card:hover .colab-portal-btn {
+      background: #0369a1;
+      transform: translateY(-1px);
+    }
+    @media (max-width: 768px) {
+      .colab-portal-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.85rem;
+        padding: 1rem;
+      }
+      .colab-portal-action {
+        width: 100%;
+      }
+      .colab-portal-btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
     /* --- Controls Bar: 搜尋框與分類切換頁籤 (緊貼頂部) --- */
     .controls-wrapper {
       max-width: 1280px;
@@ -747,10 +888,14 @@
       </div>
       <div class="header-right">
         <div class="hero-stats-line" aria-label="專案亮點統計">
-          <span class="stat-pill"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> <strong id="total-projects-stat">16+</strong> 個工具</span>
+          <span class="stat-pill"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> <strong id="total-projects-stat">15</strong> 個工具</span>
           <span class="stat-pill"><i class="fa-solid fa-cubes" aria-hidden="true"></i> <strong>3</strong> 大分區</span>
           <span class="stat-pill"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> 本機處理優先</span>
         </div>
+        <a href="colab.html" class="colab-nav-btn" aria-label="前往 AI 雲端冒險大廳 (Google Colab Hub)">
+          <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+          <span>🎮 雲端冒險大廳</span>
+        </a>
         <a href="https://github.com/lianghao02" target="_blank" rel="noopener noreferrer" class="github-btn" aria-label="前往 LiangHao 的 GitHub 個人主頁">
           <i class="fa-brands fa-github" aria-hidden="true"></i>
           <span>GitHub</span>
@@ -783,6 +928,26 @@
     </div>
   </div>
 
+  <!-- Colab Hub 快速冒險傳送門 -->
+  <div class="colab-portal-container">
+    <a href="colab.html" class="colab-portal-card" aria-label="前往梁巡官的 AI 雲端冒險大廳">
+      <div class="colab-portal-icon" aria-hidden="true">
+        <i class="fa-solid fa-cloud-bolt"></i>
+      </div>
+      <div class="colab-portal-content">
+        <div class="colab-portal-badge-group">
+          <span class="portal-badge portal-badge-new">NEW • 雲端神器</span>
+          <span class="portal-badge portal-badge-free">Google Colab 免本機算力</span>
+        </div>
+        <h2 class="colab-portal-title">🎮 梁巡官的 AI 雲端冒險大廳 (Colab Quest Hub)</h2>
+        <p class="colab-portal-desc">零配備要求！一鍵在 Google 雲端啟動 Takeout 相簿整理去重與 AI 人臉千里搜圖水晶球。</p>
+      </div>
+      <div class="colab-portal-action">
+        <span class="colab-portal-btn">出征大廳 ➜</span>
+      </div>
+    </a>
+  </div>
+
   <!-- Main Content Area -->
   <main id="projects" aria-live="polite" aria-label="專案作品列表">
     <!-- Dynamic Content injected via main.js -->
@@ -806,6 +971,7 @@
       <div>
         <div class="footer-col-title">相關連結</div>
         <ul class="footer-links">
+          <li><a href="colab.html" class="footer-link"><i class="fa-solid fa-wand-magic-sparkles"></i> 🎮 AI 雲端冒險大廳 (Colab Hub)</a></li>
           <li><a href="https://github.com/lianghao02" target="_blank" rel="noopener noreferrer" class="footer-link"><i class="fa-brands fa-github"></i> GitHub Profile</a></li>
           <li><a href="wuxia_typing.html" class="footer-link"><i class="fa-solid fa-keyboard"></i> 武俠打字傳・玩法與開發歷程</a></li>
           <li><a href="photo_report.html" class="footer-link"><i class="fa-solid fa-file-excel"></i> 經典照片清冊工具</a></li>

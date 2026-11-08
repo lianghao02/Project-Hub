@@ -200,7 +200,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#84cc16",
       "badge": "免安裝網頁",
       "badgeClass": "badge-web",
-      "version": "v1.6.5",
+      "version": "v1.8.2",
       "action": "開始調配",
       "featured": false,
       "versionLabel": "線上"
@@ -227,27 +227,6 @@ const FALLBACK_PROJECTS = [
       "featured": true
     },
     {
-      "name": "系統清理小幫手",
-      "category": "native",
-      "description": "300 KB 單檔小工具，秒開即用，一鍵釋放 Win32 待命快取。",
-      "tags": [
-        "C# 12 (.NET 8)",
-        "300KB 單檔",
-        "Win32 快取釋放",
-        "秒開"
-      ],
-      "url": "https://github.com/lianghao02/System-Optimizer-Tool",
-      "image": "images/banner_System-Optimizer-Tool.webp",
-      "alt": "系統清理小幫手封面",
-      "icon": "fa-wind",
-      "iconColor": "#eab308",
-      "badge": "Windows 桌面",
-      "badgeClass": "badge-native",
-      "version": "v6.2.3",
-      "action": "一鍵清理",
-      "featured": false
-    },
-    {
       "name": "PDF 印刷所",
       "category": "native",
       "description": "掌握各式文件尺寸與排版，以 WinRT 縮圖與 STA 隔離完成轉檔，快速把文件合成 PDF。",
@@ -264,7 +243,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#ef4444",
       "badge": "Windows 桌面",
       "badgeClass": "badge-native",
-      "version": "v4.5.0",
+      "version": "v4.6.0",
       "action": "開始轉檔",
       "featured": true,
       "versionLabel": "下載"
@@ -309,7 +288,9 @@ const FALLBACK_PROJECTS = [
       "badgeClass": "badge-native",
       "version": "v1.3.1",
       "action": "整理相簿",
-      "featured": true
+      "featured": true,
+      "guideUrl": "colab.html",
+      "guideLabel": "🎮 雲端冒險大廳"
     },
     {
       "name": "影片快篩偵測站",
