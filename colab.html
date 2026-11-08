@@ -149,6 +149,11 @@
       box-shadow: 0 6px 20px rgba(124, 58, 237, 0.2);
     }
 
+    .card-amber {
+      border: 2px solid #d97706;
+      box-shadow: 0 6px 20px rgba(217, 119, 6, 0.25);
+    }
+
     .card-locked {
       background: rgba(15, 23, 42, 0.7);
       border: 2px dashed #475569;
@@ -172,6 +177,7 @@
 
     .badge-blue { background: #0284c7; }
     .badge-purple { background: #7c3aed; }
+    .badge-amber { background: #d97706; }
     .badge-gray { background: #334155; color: #94a3b8; }
 
     .quest-cost {
@@ -180,6 +186,7 @@
     }
     .cost-blue { color: #38bdf8; }
     .cost-purple { color: #c084fc; }
+    .cost-amber { color: #fbbf24; }
     .cost-gray { color: #64748b; }
 
     .quest-title {
@@ -235,6 +242,16 @@
     }
     .btn-purple:hover {
       box-shadow: 0 6px 15px rgba(124, 58, 237, 0.6);
+      transform: scale(1.02);
+    }
+
+    .btn-amber {
+      background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+      border: 1px solid #f59e0b;
+      box-shadow: 0 4px 10px rgba(217, 119, 6, 0.4);
+    }
+    .btn-amber:hover {
+      box-shadow: 0 6px 15px rgba(217, 119, 6, 0.6);
       transform: scale(1.02);
     }
 
@@ -379,6 +396,25 @@
         <div class="quest-actions">
           <a class="btn-quest btn-purple" href="https://colab.research.google.com/github/lianghao02/14_Google-Photos-Takeout-Organizer/blob/main/colab/02_AI人臉與搜圖工作台.ipynb" target="_blank" rel="noopener">
             🚀 開啟 Colab 執行工作台 ➜
+          </a>
+        </div>
+      </article>
+
+      <!-- 工具卡片 03 -->
+      <article class="quest-card card-amber">
+        <div>
+          <div class="quest-meta">
+            <span class="quest-badge badge-amber">TOOL 03 • 畫質修復</span>
+            <span class="quest-cost cost-amber">運算：GPU 加速 (T4)</span>
+          </div>
+          <h2 class="quest-title">🖼️ 老照片 AI 畫質修復與超解析度工作台</h2>
+          <p class="quest-desc">
+            專門修復泛黃、失焦、五官模糊的老舊照片與手機翻拍照。整合 GFPGAN v1.4 人臉細節精緻重建與 Real-ESRGAN 4K 無損放大，支援單張即時 Before/After 對比與指定相簿全自動批次修復。
+          </p>
+        </div>
+        <div class="quest-actions">
+          <a class="btn-quest btn-amber" href="https://colab.research.google.com/github/lianghao02/14_Google-Photos-Takeout-Organizer/blob/main/colab/03_老照片畫質修復與超解析度.ipynb" target="_blank" rel="noopener">
+            🚀 開啟 Colab 執行修復 ➜
           </a>
         </div>
       </article>
