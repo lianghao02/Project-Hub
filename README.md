@@ -96,7 +96,7 @@ python scripts/validate_projects.py
 
 ## 特殊頁面與下載
 
-- [colab.html](colab.html)：**AI 雲端工具箱 (Google Colab Hub)**，整合免本機硬體算力的 Takeout 相簿整理去重與 AI 人臉分群搜圖工作台。
+- [colab.html](colab.html)：**AI 雲端工具箱 (Google Colab Hub)**，整合免本機硬體算力的 Takeout 相簿整理去重、AI 人臉分群搜圖與老照片畫質修復工作台。
 - [wuxia_typing.html](wuxia_typing.html)：《武俠打字傳》的完整專案概念、遊戲方法、30 關境界題本配置與五大階段開發歷程專頁。
 - [photo_report.html](photo_report.html)：舊版 Excel/VBA 照片清冊工具的獨立介紹與下載頁，並非 Photo-Report-Generator Web 應用程式的副本，因此保留維護。`downloads/Photo_Report.rar` 仍由此頁使用。
 
@@ -112,8 +112,8 @@ python scripts/validate_projects.py
 ├─ scripts/sync_projects.py       # 一鍵自動同步版本號與備援
 ├─ scripts/validate_projects.py   # 專案資料合規驗證
 ├─ scripts/update_project_hub.py
-├─ index.html                     # 作品集首頁（整合 Colab 冒險大廳快速入口）
-├─ colab.html                     # 梁巡官的 AI 雲端冒險大廳 (Colab Quest Hub)
+├─ index.html                     # 作品集首頁（整合 AI 雲端工具箱快速入口）
+├─ colab.html                     # AI 雲端工具箱 (Google Colab Hub)
 ├─ wuxia_typing.html              # 武俠打字傳・玩法指南與開發歷程專頁
 └─ photo_report.html              # 經典照片清冊工具專頁
 ```
