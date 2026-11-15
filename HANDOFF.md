@@ -3,7 +3,7 @@
 ## 核心元資料 (Metadata)
 - **Repository**：lianghao02/Project-Hub
 - **Branch**：main
-- **Commit SHA**：基準 7b5d9e9；本輪版本同步提交請見 git log -1。
+- **Commit SHA**：基準 9faa7e4；本輪版本同步提交請見 git log -1。
 - **Skill Version**：v1.0.0
 - **Task Type**：RELEASE
 - **Local Path Hint**：13_Project-Hub
@@ -11,14 +11,14 @@
 ---
 
 ## 目前狀態
-PaperSwitch v4.7.0 已於 GitHub 公開，本輪僅同步展示版本及備援資料。
+PaperSwitch v4.7.1 已於 GitHub 公開，本輪僅同步展示版本及備援資料。
 
 ## 本輪目標
-依 PaperSwitch 發布規範，將已確認的公開版本從 v4.6.0 更新為 v4.7.0。
+依 PaperSwitch 發布規範，將已確認的公開版本從 v4.7.0 更新為 v4.7.1。
 
 ## 基準與已確認事實 (Baseline & Confirmed Facts)
 - 開始時工作目錄乾淨；fetch 後 main 與 origin/main 一致。
-- 已核對 PaperSwitch v4.7.0 公開發行與 EXE／SHA256 附件，中央版本線上檢查 OK。
+- 已核對 PaperSwitch v4.7.1 公開發行與 EXE／SHA256 附件，中央版本線上檢查 OK。
 - 使用者已要求提交推送及新版發行，發布規範要求同步展示版本。
 
 ## 已完成 (Completed)
@@ -56,7 +56,7 @@ PaperSwitch v4.7.0 已於 GitHub 公開，本輪僅同步展示版本及備援�
 - Branch：main。
 
 ## 下一步建議動作 (Next Recommended Action)
-確認公開 projects.json 的 PaperSwitch 版本為 v4.7.0，停止擴大修改。
+確認公開 projects.json 的 PaperSwitch 版本為 v4.7.1，停止擴大修改。
 
 ## 發布狀態 (Release Status)
 本輪為既有展示站的已發布版本資料同步。

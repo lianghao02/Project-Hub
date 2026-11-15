@@ -210,7 +210,7 @@
     "iconColor": "#ef4444",
     "badge": "Windows 桌面",
     "badgeClass": "badge-native",
-    "version": "v4.7.0",
+    "version": "v4.7.1",
     "action": "開始轉檔",
     "featured": true,
     "versionLabel": "下載"
