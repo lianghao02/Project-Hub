@@ -49,7 +49,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#0ea5e9",
       "badge": "免安裝網頁",
       "badgeClass": "badge-web",
-      "version": "v3.3.0",
+      "version": "v3.3.1",
       "action": "開啟雷達",
       "featured": true,
       "versionLabel": "線上"
@@ -92,7 +92,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#d97706",
       "badge": "免安裝網頁",
       "badgeClass": "badge-web",
-      "version": "v1.8.1",
+      "version": "v1.8.2",
       "action": "開始轉檔",
       "featured": false
     },
