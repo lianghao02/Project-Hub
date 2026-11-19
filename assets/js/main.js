@@ -71,7 +71,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#14b8a6",
       "badge": "免安裝網頁",
       "badgeClass": "badge-web",
-      "version": "v2.4.1",
+      "version": "v2.5.0",
       "action": "開啟工坊",
       "featured": true
     },
@@ -113,7 +113,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#10b981",
       "badge": "免安裝網頁",
       "badgeClass": "badge-web",
-      "version": "v1.3.1",
+      "version": "v1.3.2",
       "action": "打開手帳",
       "featured": false
     },
@@ -134,7 +134,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#b45309",
       "badge": "免安裝網頁",
       "badgeClass": "badge-web",
-      "version": "v2.2.3",
+      "version": "v2.2.4",
       "action": "開始闖關",
       "guideUrl": "wuxia_typing.html",
       "guideLabel": "玩法與開發歷程",
@@ -158,7 +158,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#e11d48",
       "badge": "免安裝網頁",
       "badgeClass": "badge-web",
-      "version": "v1.6.1",
+      "version": "v1.6.2",
       "action": "開始追蹤",
       "featured": true
     },
@@ -179,7 +179,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#f59e0b",
       "badge": "免安裝網頁",
       "badgeClass": "badge-web",
-      "version": "v1.2.1",
+      "version": "v1.2.2",
       "action": "查看帳本",
       "featured": false
     },
@@ -200,7 +200,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#84cc16",
       "badge": "免安裝網頁",
       "badgeClass": "badge-web",
-      "version": "v1.8.2",
+      "version": "v1.8.3",
       "action": "開始調配",
       "featured": false,
       "versionLabel": "線上"
@@ -222,7 +222,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#6366f1",
       "badge": "Windows 桌面",
       "badgeClass": "badge-native",
-      "version": "v11.4.0",
+      "version": "v11.6.0",
       "action": "開啟放大鏡",
       "featured": true
     },
@@ -243,7 +243,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#ef4444",
       "badge": "Windows 桌面",
       "badgeClass": "badge-native",
-      "version": "v4.7.1",
+      "version": "v4.8.0",
       "action": "開始轉檔",
       "featured": true,
       "versionLabel": "下載"
@@ -265,7 +265,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#3b82f6",
       "badge": "Windows 桌面",
       "badgeClass": "badge-native",
-      "version": "v2.11.1",
+      "version": "v2.11.2",
       "action": "整理桌面",
       "featured": true
     },
@@ -286,7 +286,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#38bdf8",
       "badge": "Windows 桌面",
       "badgeClass": "badge-native",
-      "version": "v1.3.1",
+      "version": "v1.4.0",
       "action": "整理相簿",
       "featured": true,
       "guideUrl": "colab.html",
@@ -309,7 +309,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#0f766e",
       "badge": "AI 智慧",
       "badgeClass": "badge-ai",
-      "version": "v4.0.1",
+      "version": "v4.0.2",
       "action": "開始快篩",
       "featured": true
     },
@@ -330,7 +330,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#8b5cf6",
       "badge": "AI 智慧",
       "badgeClass": "badge-ai",
-      "version": "V2.1.0",
+      "version": "V2.2.0",
       "action": "啟動機器人",
       "featured": false
     },
@@ -351,7 +351,7 @@ const FALLBACK_PROJECTS = [
       "iconColor": "#5f8768",
       "badge": "AI 智慧",
       "badgeClass": "badge-ai",
-      "version": "v1.2.0",
+      "version": "v1.3.0",
       "action": "開始隱身",
       "featured": false
     }
